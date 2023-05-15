@@ -1,0 +1,217 @@
+* {
+	box-sizing: border-box;
+	/* referenced https://codyhouse.co/nuggets/custom-cursor */
+	/* cursor: url('../img/cursor.svg') 20 20, auto; */
+	
+	margin:auto;
+}  
+
+/*  BOXES */
+
+.box-wrap{
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	gap:1em;
+}
+
+.box-row{
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+    -webkit-flex-direction:row;
+	-ms-flex-direction:row;
+	flex-direction: row;
+	gap:1em;
+}
+
+.box-column{
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+	-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.center{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+/*---- BODY ----*/
+.body-box{
+	
+	
+	gap:1.2em;
+}
+
+section{
+	gap:1em; 
+	width:100%;
+	
+}
+
+.element{
+    border-style:solid;
+    border-color:black;
+	border-width:0.1em;
+	padding:1em;
+	gap:1em;
+	width:100%;
+}
+
+
+.rendered{
+    display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display:flex;
+	flex-wrap: wrap;
+	align-self:center;
+	border-style:dotted;
+	padding:1em;
+	width:fit-content;
+	gap:1em;
+}
+
+/*---- HEADER ----*/
+
+
+.header-title-box{
+	background-color: rgb(255, 255, 255);
+	text-align: right;
+	
+	padding:2.5em;
+	padding-right: 4.5em;
+	border-style:solid;
+	border-color:black;
+	border-width: 0.1em;
+	position:absolute;
+	top:0;
+	right:7vw;
+}
+
+.header-text-box{
+	padding-right:2em;
+	padding-top:1em;
+	padding-bottom:1em;
+	text-align: right;
+	position:absolute;
+	top:0;
+	right: calc(7vw + 20em);
+}
+
+.header-box{
+  position: absolute;
+  top:0;
+  right:0;
+  width:93vw;
+  height:8em;
+  border-bottom: solid black 0.1em;
+  border-left:solid black 0.1em;
+  z-index: -1;
+}
+/*---- //HEADER ----*/
+
+
+
+/*---- NAVIGATION BAR ----*/
+nav{
+	position:fixed;
+	width:100%;
+	top:0;
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display:flex;
+	-webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+	justify-content: flex-end;
+	
+	gap:1em;
+}
+
+nav .nav-button{
+	display:block;
+	width:3em;
+	text-align:center;
+}
+
+
+/*---- // NAVIGATION BAR ----*/
+
+
+
+
+.visuals{
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display:flex;
+	-webkit-flex-wrap: row;
+	-ms-flex-wrap: row;
+	flex-wrap: row;
+	gap:1em;
+}
+.box-color{
+	width:3em;
+	height:3em;
+}
+.box-color:nth-of-type(1){
+	background-color:black;
+}
+.box-color:nth-of-type(2){
+	background-color:rgb(113, 109, 105);
+}
+
+.box-color:nth-of-type(3){
+	background-color:rgb(241, 237, 234);
+}
+.box-color:nth-of-type(4){
+	background-color:white;
+	border-style: solid;
+	border-color:black;
+}
+.box-color:nth-of-type(5){
+	background-color:white;
+	border-style: dotted;
+	border-color:black;
+}
+
+
+.two-img{
+	width:48%;
+}
+.three-img{
+	width:30%;
+}
+.four-img{
+	width:23%;
+}
+.gallery{
+	justify-content: space-between;
+	align-content: space-between;
+}
+.gallery-img{
+	max-width: 32%;
+}
+
+.two-column{
+	gap:1em;
+	flex:1 1 20em;
+}
+.two-column-box{
+	gap:2em;
+}
+
+/*---- MEDIA QUERIES ----*/
+@media(max-width:83em){
+	/* .video-wrapper-header{
+		
+	} */
+}
+

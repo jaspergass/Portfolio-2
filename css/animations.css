@@ -1,0 +1,51 @@
+nav .checked-img{
+    animation: 1s  forwards navigation;
+}
+
+@keyframes navigation{
+    from{
+        
+	    transform: translate(0.04em, 0.3em);
+	    
+    }
+    to{
+        transform: translate(-0em, 0.2em) scale(1.5);
+    }
+}
+
+
+nav .checked{
+    animation: 1s  forwards checked-button-in;
+}
+
+@keyframes checked-button-in{
+    from{
+        transform: translate(0em, 0em) ;
+        border-color:rgb(113, 109, 105);
+    }
+    to{
+        transform: translate( 1em, 0em);
+        border-color:black;
+    }
+}
+
+/* code adapted from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+.gallery-img{
+    transition: transform .2s; /* Animation */
+} 
+.gallery-img:hover, .gallery-img:focus{
+    transform: scale(1.05);
+}
+
+/* @keyframes cursor-scale {
+    from {
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.5);
+    }
+    to {
+        transform:scale(1);
+    }
+  } */
+

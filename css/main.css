@@ -1,0 +1,229 @@
+/* ------ Text ----- */
+body{
+  font-family: "open-sans", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+    padding: 0;
+}
+
+h1{
+  font-family:"sheepman";
+  font-weight: 400;
+  font-size:3em;
+  margin:0;
+  margin-bottom:0.2em;
+  
+}
+
+h2{
+  font-family:"sheepman";
+  font-weight: 400;
+  font-size:2.2em;
+  margin:0;
+  margin-bottom:0.2em;
+}
+
+h3{
+  font-family:"open-sans";
+  font-size:1.7em;
+  margin:0;
+  font-weight: 400;
+}
+
+h4{ 
+  font-family:"open-sans";
+  font-size:1.4em;
+  margin:0;
+  margin-top:0.25em;
+  margin-bottom:0.25em;
+  padding:0;
+  font-weight: 300;
+}
+
+h5{
+  font-family:"open-sans";
+  font-size:1em;
+  margin-top:0.25em;
+  margin-bottom:0.25em;
+  font-weight: 300;
+}
+
+p{
+  font-family:"open-sans";
+  font-size:1.2em;
+  line-height:1.6em;
+  margin:0;
+}
+
+.italic{
+  font-style:italic;
+}
+
+form{
+  margin:0;
+}
+
+/* ----end of text ----*/
+
+
+/* ---- IMG ----*/
+
+img{
+  height: auto;
+  max-width:100%;
+}
+
+/*---- //IMG ---- */
+
+
+/*---- INTERACTIVE ELEMENTS ------ */
+
+.nav-button{
+  font-family:"open-sans";
+  font-size:1.7em;
+  margin:0;
+  font-weight: 400;
+
+}
+
+/* back to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  
+  padding: 15px;
+  border-style:dotted;
+  border-width:0.08em;
+  border-color:black;
+}
+
+#myBtn:hover {
+  border-style:solid;
+}
+
+
+input[type="text"]{
+  border-style:dotted;
+  border-width:0.1em;
+  border-color:black;
+  width:100%;
+}
+
+input:hover, input:active{
+  border-style:solid;
+}
+
+a{
+  color:rgb(113, 109, 105);
+  text-decoration-style:dotted;
+  cursor: url('../img/cursor-hover.svg') 17.5 17.5, auto;
+  margin:0;
+  width:fit-content;
+
+  /* referenced https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+a:hover,a:active{
+  color:black;
+  text-decoration-style:solid;
+}
+
+a h1, a h3{
+  color:black;
+}
+
+
+
+#cursor {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  transform: translate(-30px, -30px);
+  background-image: url('../img/cursor-white-hover.svg');
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: difference;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  justify-content: center;  
+}
+.video-wrapper video{
+  height:75%;
+}
+
+
+.header-title{
+  position:absolute;
+  color:#FFF;
+  text-align: right;
+  /* 
+  left: 0;
+  right: 0;  
+  top: 0;
+  bottom: 0;
+  margin: auto; */
+  top:42%;
+  right:10%;
+}
+.header-title h1{
+  font-size: 20vmin;
+  margin-bottom:0.04em;
+}
+.header-title h3{
+  font-size:6vmin;
+  font-weight:700;
+}
+
+.header-button{
+  font-family: "open-sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-size:6vmin;
+  font-weight:700;
+  border:none;
+  border-radius: 0.5em;
+  color: #fff;
+  background-color: transparent;
+  align-self:center;
+  align-items: center;
+  text-align: center;
+  margin-right:0em;
+  padding:0.5em;
+  background-color: transparent;
+}
+
+#intro-screen{
+  display:none;
+}
+
+.video-wrapper-header video{
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height:40%;
+  width: 60%;
+  mix-blend-mode: difference;
+  overflow: hidden;
+}
