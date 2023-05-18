@@ -3,6 +3,7 @@ body{
   font-family: "open-sans", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 h1{
@@ -77,13 +78,6 @@ img{
 
 /*---- INTERACTIVE ELEMENTS ------ */
 
-.nav-button{
-  font-family:"open-sans";
-  font-size:1.7em;
-  margin:0;
-  font-weight: 400;
-
-}
 
 /* back to top button */
 #myBtn {
@@ -120,9 +114,9 @@ input:hover, input:active{
 }
 
 a{
-  color:rgb(113, 109, 105);
+  color:white;
   text-decoration-style:dotted;
-  cursor: url('../img/cursor-hover.svg') 17.5 17.5, auto;
+  
   margin:0;
   width:fit-content;
 
@@ -135,7 +129,7 @@ a{
 }
 
 a:hover,a:active{
-  color:black;
+  color:white;
   text-decoration-style:solid;
 }
 
@@ -143,42 +137,81 @@ a h1, a h3{
   color:black;
 }
 
+/* Navigation bar */
+nav{
+  color: white;
+  mix-blend-mode: exclusion;
+  z-index: 1000;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+  overflow: hidden;
+}
+nav li{
+  float: left;
+  font-size:1.7em;
+}
+nav li:not(:last-child) { 
+  margin-left: 0.5em;  
+}
+nav li:last-child{
+  margin-left:3em;
+}
 
 
-#cursor {
-  position: absolute;
+/* // Navigation bar */
+
+.cursor {
+  position: fixed;
   height: 60px;
   width: 60px;
-  transform: translate(-30px, -30px);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
   background-image: url('../img/cursor-white-hover.svg');
+  
+  
+  
+  z-index: 1000;
+
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .video-wrapper {
   position:relative;
   overflow: hidden;
   justify-content: center;  
-  object-fit: cover;
+  object-fit:cover;
+  place-items: center;
+  width:100%;
+  height: 75vh;
+  min-height: 30em;
 }
 .video-wrapper video{
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
   width:100%;
   height:100%;
-  mix-blend-mode: difference;
-  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header-title{
   position:absolute;
-  color:#FFF;
+  color:white;
   text-align: right;
-  /* 
-  left: 0;
-  right: 0;  
-  top: 0;
-  bottom: 0;
-  margin: auto; */
-  top:42%;
-  right:10%;
-  
+  top:35vh;
+  right:1em;
+  mix-blend-mode:exclusion;
+  z-index: 100;
 }
 .header-title h1{
   font-size: 20vmin;

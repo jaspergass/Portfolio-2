@@ -4,6 +4,7 @@
 	/* cursor: url('../img/cursor.svg') 20 20, auto; */
 	
 	margin:auto;
+	cursor:none;
 }  
 
 /*  BOXES */
@@ -129,21 +130,28 @@ nav{
 	-webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-	justify-content: flex-end;
 	
-	gap:1em;
-}
-
-nav .nav-button{
-	display:block;
-	width:3em;
-	text-align:center;
 }
 
 
 /*---- // NAVIGATION BAR ----*/
-
-
+.nav-left{
+	align-self:flex-start;
+	margin:0;
+	margin-left:1em;
+}
+.nav-right{
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display:flex;
+	-webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+	
+	
+	margin-right:1em;
+	justify-content: end;
+}
 
 
 .visuals{

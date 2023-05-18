@@ -10,10 +10,11 @@
     <link href="./css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
+    
   </head>
 
   <body>
-    <div id="cursor"></div>
+    <div class="cursor"></div>
     
     <header>
       
@@ -28,23 +29,35 @@
       <form action="index.html">
         <button class="nav-button">Home</button>
       </form> -->
+      <div class="nav-left">
+        <h1>JG</h1>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li class="checked"><a href="">Portfolio, </a></li>
+          <li><a href="">Portfolio, </a></li>
+          <li><a href="">Portfolio, </a></li>
+          <li><a href="">Archive</a></li>
+        </ul>
+      </div>
+      
     </nav>
 
-    
-
     <div class="body-box">
-      <div id="video-box">
-        <div class="header-title">
-          <h1>Jasper Gass</h1>
-          <h3>eportfolio</h3>
-        </div>
-        
+      
+       
         <div class="video-wrapper">
           <video  autoplay muted loop poster="">
             <source src="./img/bgvideo.mp4" type="video/mp4">
           </video>
+    
         </div>
-      </div>
+        
+        <div class="header-title">
+          <h1>Jasper Gass</h1>
+          <h3>eportfolio</h3>
+        </div>
+
       <section id="Notable">
         <h2>Notable projects</h2>
         
@@ -55,9 +68,11 @@
       </section>
     </div>
     
-
+   
     <!-- script -->
+    
     <script  src="./script.js"></script>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="./script.js"></script>
   </body>
 </html>
