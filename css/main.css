@@ -114,7 +114,7 @@ input:hover, input:active{
 }
 
 a{
-  color:white;
+  color:black;
   text-decoration-style:dotted;
   
   margin:0;
@@ -129,7 +129,7 @@ a{
 }
 
 a:hover,a:active{
-  color:white;
+  color:black;
   text-decoration-style:solid;
 }
 
@@ -151,15 +151,32 @@ nav ul{
 }
 nav li{
   float: left;
-  font-size:1.7em;
+  font-size:1.4em;
 }
 nav li:not(:last-child) { 
-  margin-left: 0.5em;  
+  margin-right: 0.5em;  
 }
 nav li:last-child{
   margin-left:3em;
 }
 
+nav img{
+  max-height:3em;
+}
+nav a h1{
+  color:white;
+}
+
+nav a{
+  /* text-decoration: none; */
+  color:white
+}
+
+nav a:hover, a:active{
+  color:white;
+  text-decoration:solid;
+  text-decoration-style: solid;
+}
 
 /* // Navigation bar */
 
@@ -208,8 +225,8 @@ nav li:last-child{
   position:absolute;
   color:white;
   text-align: right;
-  top:35vh;
-  right:1em;
+  top:38vh;
+  right:2em;
   mix-blend-mode:exclusion;
   z-index: 100;
 }
