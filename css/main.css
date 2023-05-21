@@ -74,7 +74,6 @@ img{
 }
 
 .img-onboarding{
-  
   padding-left:15%;
   padding-right:15%;
 }
@@ -194,7 +193,7 @@ nav a:hover, a:active{
   mix-blend-mode: difference;
   background-image: url('../img/cursor-white-hover.svg');
   
-  
+  pointer-events: none;
   
   z-index: 1000;
 
