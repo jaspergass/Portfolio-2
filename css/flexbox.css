@@ -54,6 +54,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
 	gap:1.2em;
+	margin-bottom:4em;
 }
 
 .top-section{
@@ -80,7 +81,13 @@ section{
 .section-right{
 	flex:3;
 	text-align: left;
-	
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+	-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	gap:1em; 
 }
 
 .element{
