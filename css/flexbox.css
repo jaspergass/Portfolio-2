@@ -112,46 +112,15 @@ section{
 	gap:1em;
 }
 
-/*---- HEADER ----*/
 
-
-.header-title-box{
-	background-color: rgb(255, 255, 255);
-	text-align: right;
-	
-	padding:2.5em;
-	padding-right: 4.5em;
-	border-style:solid;
-	border-color:black;
-	border-width: 0.1em;
-	position:absolute;
-	top:0;
-	right:7vw;
+.protect-title{
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display:flex;
+	-webkit-flex-wrap: row;
+	-ms-flex-wrap: row;
+	flex-wrap: row;
 }
-
-.header-text-box{
-	padding-right:2em;
-	padding-top:1em;
-	padding-bottom:1em;
-	text-align: right;
-	position:absolute;
-	top:0;
-	right: calc(7vw + 20em);
-}
-
-.header-box{
-  position: absolute;
-  top:0;
-  right:0;
-  width:93vw;
-  height:8em;
-  border-bottom: solid black 0.1em;
-  border-left:solid black 0.1em;
-  z-index: -1;
-}
-/*---- //HEADER ----*/
-
-
 
 /*---- NAVIGATION BAR ----*/
 nav{
@@ -256,9 +225,14 @@ nav{
 }
 
 /*---- MEDIA QUERIES ----*/
-@media(max-width:83em){
-	/* .video-wrapper-header{
-		
-	} */
-}
 
+
+@media(max-width:40em){
+	.section-right{
+	  flex: 1 0 100%;
+	}
+	.section-left{
+	  flex: 1 0 100%;
+	  text-align: left;
+	}
+  }
