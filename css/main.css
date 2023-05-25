@@ -167,6 +167,16 @@ nav a:hover, a:active{ color:white; }
 
 nav .no-underline{ text-decoration: none; }
 
+nav button{
+  color:white;
+  background-color: black;
+  border:none;
+  margin:0;
+  padding:auto;
+  font-size:1.4em;
+  font-weight:700;
+}
+
 /* // Navigation bar */
 
 .cursor {

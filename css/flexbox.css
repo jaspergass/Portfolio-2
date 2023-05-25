@@ -148,7 +148,7 @@ nav{
 	-webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-	
+	min-width:6em;
 }
 .nav-right{
 	display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -235,4 +235,47 @@ nav{
 	  flex: 1 0 100%;
 	  text-align: left;
 	}
-  }
+}
+@media(max-width:80em){
+	/* nav{
+		-webkit-flex-direction: column;
+    	-ms-flex-direction: column;
+    	flex-direction: column;
+	} */
+	/* .nav-right{
+		-webkit-flex-direction: column;
+    	-ms-flex-direction: column;
+    	flex-direction: column;
+		
+	} */
+	/* nav li{
+		font-size:1em;
+	}
+	nav img{ max-height:2.5em; }
+	nav h1{
+		font-size:2.5em;
+	}
+	h2{
+		font-size:1.5em;
+	}
+	h4{
+		font-size:1.2em;
+	}
+	p{
+		font-size:1em;
+	} */
+}
+
+.condensed{
+	display: none;
+}
+@media(max-width:64em){
+	.nav-right .expanded{
+		display: none;
+	}
+	.nav-right .condensed{
+		display: inline-block;
+	}
+}
+
+
