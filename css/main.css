@@ -120,7 +120,7 @@ input:hover, input:active{
 
 a{
   color:black;
-  text-decoration-style:dotted;
+  text-decoration-style: dotted;
   
   margin:0;
   width:fit-content;
@@ -153,6 +153,7 @@ nav ul{
   padding: 0; 
   margin: 0;
   overflow: hidden;
+  font-weight:700;
 }
 nav li{
   float: left;
@@ -173,14 +174,19 @@ nav a h1{
 }
 
 nav a{
-  /* text-decoration: none; */
-  color:white
+  color:white;
+  text-decoration-style: solid;
+  /* text-decoration-style: none; */
 }
 
 nav a:hover, a:active{
   color:white;
-  text-decoration:solid;
-  text-decoration-style: solid;
+  
+}
+
+nav .no-underline{
+  text-decoration: none;
+  
 }
 
 /* // Navigation bar */
