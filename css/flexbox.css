@@ -228,6 +228,19 @@ nav{
 	gap:2em;
 }
 
+.project-title{
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display:flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-left:0;
+	align-items: baseline;
+	gap:1em;
+}
+
+
 /*---- MEDIA QUERIES ----*/
 
 
@@ -239,6 +252,7 @@ nav{
 	  flex: 1 0 100%;
 	  text-align: left;
 	}
+	
 }
 @media(max-width:80em){
 	/* nav{
@@ -280,4 +294,9 @@ nav{
 	}
 }
 
+@media(max-width:29.6em){
+	.project-title{
+		gap:0;
+	}
+}
 
