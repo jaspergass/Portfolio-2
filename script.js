@@ -51,3 +51,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     initCursor = false;
   };
 });
+
+function showMenu() {
+  var menucontent = document.getElementById("menu-content");
+  var title = document.getElementById("header-title");
+  var button = document.getElementById("menu-button");
+  if (menucontent.style.display === "none") {
+    menucontent.style.display = "block";
+    title.style.display = "none";
+    button.innerHTML = "Close";
+  } else {
+    menucontent.style.display = "none";
+    title.style.display = "block";
+    button.innerHTML = "Menu";
+  }
+}

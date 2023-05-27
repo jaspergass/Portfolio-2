@@ -136,8 +136,6 @@ nav{
 	
 }
 
-
-/*---- // NAVIGATION BAR ----*/
 .nav-left{
 	align-self:flex-start;
 	margin:0;
@@ -163,7 +161,13 @@ nav{
 	justify-content: end;
 }
 
+.condensed { 
+	display: none;
+}
 
+
+
+/*---- // NAVIGATION BAR ----*/
 .visuals{
 	display: -webkit-flex; /* For support in a series of Webkit browsers */
 	display: -ms-flex; /* For support in IE 10 */
@@ -266,9 +270,7 @@ nav{
 	} */
 }
 
-.condensed{
-	display: none;
-}
+
 @media(max-width:64em){
 	.nav-right .expanded{
 		display: none;

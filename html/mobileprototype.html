@@ -25,18 +25,32 @@
         <a href="../index.html"><img src="../img/cursor-white-hover.svg"></a>
       </div>
       <div class="nav-right">
-        <ul>
+        <div class="expanded">
+          <ul>
             <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
             <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
             <li><a class="no-underline" href="../html/responsiveweb.html"">Responsive Web, </a></li>
             <li><a href="../html/mobileprototype.html">Mobile Prototype, </a></li>
-          <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
-        </ul>
+            <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+          </ul>
+        </div>
+
+        <div class="condensed">
+          <button id="menu-button" onclick="showMenu()">Menu</button>
+        </div>
       </div>
     </nav>
 
     <div class="body-box">
-      
+      <div id="menu-content" class="menu-content">
+        <ul>
+          <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
+          <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
+          <li><a class="no-underline" href="../html/responsiveweb.html">Responsive Web, </a></li>
+          <li><a href="../html/mobileprototype.html">Mobile Prototype, </a></li>
+          <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+        </ul>
+      </div>
        
         <section class="top-section">
             <img src="../img/mobile_prototype/mobile-prototype.png" alt="Several screens of the mobile project.">

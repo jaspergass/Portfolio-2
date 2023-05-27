@@ -25,11 +25,9 @@
         <a href=""><img src="./img/cursor-white-hover.svg"></a>
       </div>
       <div class="nav-right">
-        
-
         <div class="expanded">
           <ul>
-            <li><a href="">Portfolio, </a></li>
+            <li><a href="./index.html">Portfolio, </a></li>
             <li><a class="no-underline" href="./html/arcanamini.html">Arcana Mini App, </a></li>
             <li><a class="no-underline" href="./html/responsiveweb.html"">Responsive Web, </a></li>
             <li><a class="no-underline" href="./html/mobileprototype.html">Mobile Prototype, </a></li>
@@ -38,14 +36,22 @@
         </div>
 
         <div class="condensed">
-          <button>Menu</button>
+          <button id="menu-button" onclick="showMenu()">Menu</button>
         </div>
       </div>
       
     </nav>
 
     <div class="body-box">
-      
+      <div id="menu-content" class="menu-content">
+        <ul>
+          <li><a href="./index.html">Portfolio, </a></li>
+          <li><a class="no-underline" href="./html/arcanamini.html">Arcana Mini App, </a></li>
+          <li><a class="no-underline" href="./html/responsiveweb.html"">Responsive Web, </a></li>
+          <li><a class="no-underline" href="./html/mobileprototype.html">Mobile Prototype, </a></li>
+          <li><a class="no-underline" href="./html/archive.html">Archive</a></li>
+        </ul>
+      </div>
        
         <div class="video-wrapper">
           <video  autoplay muted loop poster="">
@@ -54,7 +60,7 @@
     
         </div>
         
-        <div class="header-title">
+        <div id="header-title" class="header-title">
           <h1>Jasper Gass</h1>
           <h3>eportfolio</h3>
         </div>
