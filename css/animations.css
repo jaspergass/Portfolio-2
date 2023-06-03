@@ -29,13 +29,6 @@ nav .checked-img{
     }
 } */
 
-/* code adapted from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
-.gallery-img{
-    transition: transform .2s; /* Animation */
-} 
-.gallery-img:hover, .gallery-img:focus{
-    transform: scale(1.05);
-}
 
 /* @keyframes cursor-scale {
     from {

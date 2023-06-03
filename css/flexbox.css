@@ -89,7 +89,12 @@ section{
     flex-direction: column;
 	gap:1em; 
 }
-
+section .archive{
+	-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	margin:0;
+}
 .element{
     border-style:solid;
     border-color:black;
@@ -212,13 +217,7 @@ nav{
 .four-img{
 	width:23%;
 }
-.gallery{
-	justify-content: space-between;
-	align-content: space-between;
-}
-.gallery-img{
-	max-width: 32%;
-}
+
 
 .two-column{
 	gap:1em;
@@ -239,6 +238,7 @@ nav{
 	align-items: baseline;
 	gap:1em;
 }
+
 
 
 /*---- MEDIA QUERIES ----*/
