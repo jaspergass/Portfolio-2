@@ -140,9 +140,9 @@ a h1, a h3{ color:black; }
 
 /* Navigation bar */
 nav{
-  color: white;
-  mix-blend-mode: exclusion;
-  z-index: 1000;
+  color:black;
+  background-color: white;
+  z-index:100;
 }
 nav ul, .menu-content ul{
   list-style-type: none;
@@ -157,13 +157,17 @@ nav li{
 }
 nav li:not(:last-child) { margin-right: 0.5em;  }
 nav li:last-child{ margin-left:3em; }
-nav img{ max-height:3em; }
-nav a h1{ color:white; }
-nav a{
-  color:white;
+nav img{ 
+  max-height:3em;
+  height:100%;
+}
+
+nav a h1 { color:black; }
+nav a {
+  color:black;
   text-decoration-style: solid;
 }
-nav a:hover, a:active{ color:white; }
+nav a:hover, nav a:active{ color:black; }
 
 nav .no-underline, .menu-content .no-underline{ text-decoration: none; }
 
@@ -177,6 +181,21 @@ nav button{
   font-weight:700;
 }
 
+/* index page nav */
+.index a h1{ color:white; }
+.index a {
+  color:white;
+  text-decoration-style: solid;
+}
+.index a:hover, .index a:active{ color:white; }
+.index{
+  color: white; 
+  background-color: transparent;
+  mix-blend-mode: exclusion; 
+  z-index: 100;
+}
+
+/* nav menu  */
 .menu-content a{
   text-decoration-style: solid;
 }
@@ -208,7 +227,7 @@ nav button{
   height: 60px;
   width: 60px;
   transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
   background-image: url('../img/cursor-white-hover.svg');
   
   pointer-events: none;
@@ -263,29 +282,18 @@ nav button{
 }
 
 
-/* Gallery */
-.gallery{
-  width:100%;
-  height:100%;
-  min-height:2em;
-  background-color: black;
-}
-
 /* paste */
 
-.container {
-  padding: 6px;
+.gallery-container {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 5px 8px #0000007a;
   width:80vw;
 }
 
 .vueGallery .activePhoto {
   width: 100%;
   margin-bottom: 5px;
-  padding-bottom: 65%;
-  background-size: cover;
+  padding-bottom: 66.64%;
+  background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
   border: 2px solid #fff;
@@ -295,11 +303,12 @@ nav button{
   border: none;
   background-color: transparent;
   font-size: 32px;
-  color: #fff;
-  opacity: 0.5;
+  color: white;
   position: absolute;
   outline: none;
   height: 100%;
+  z-index: 10;
+  mix-blend-mode: exclusion;
 }
 .vueGallery .activePhoto button:hover {
   opacity: 1;
@@ -307,29 +316,20 @@ nav button{
 .vueGallery .activePhoto button.previous {
   padding: 0 1em 0 0.7em;
   left: 0;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#80000000", endColorstr="#00000000",GradientType=1 );
 }
 .vueGallery .activePhoto button.next {
   padding: 0 0.7em 0 1em;
   right: 0;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#80000000",GradientType=1 );
 }
 .vueGallery .thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
   grid-gap: 5px;
 }
 .vueGallery .thumbnails div {
   width: 100%;
-  border: 2px solid #fff;
-  outline: 2px solid #fff;
-  cursor: pointer;
+  border: 0.1em solid #fff;
+  outline: 0.1em solid #fff;
   padding-bottom: 65%;
   background-size: cover;
   background-position: center;
@@ -340,11 +340,11 @@ nav button{
   opacity: 0.6;
 }
 .vueGallery .thumbnails div.active {
-  outline-color: #5c4084;
+  outline-color: black;
   opacity: 1;
 }
 
-#gallery2{
+#gallery2, #gallery3, #gallery4, #gallery5{
   display:none;
 }
 

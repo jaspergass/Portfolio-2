@@ -93,8 +93,9 @@ section .archive{
 	-webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-	margin:0;
+	
 }
+
 .element{
     border-style:solid;
     border-color:black;

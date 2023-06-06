@@ -11,7 +11,7 @@
   <link href="../css/flexbox.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/animations.css">
   <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'>
 </head>
 
 <body>
@@ -60,19 +60,24 @@
 
     </section>
 
-    <section id="Gallery" class="archive">
+    <section id="Gallery" >
       <div class="archive">
         <h2>Photo Gallery</h2>
         
-        <div class="container" id="app">
+        <div class="gallery-container" id="app">
           <vue-gallery :photos="fogphotos" id="gallery1"></vue-gallery>
-          <vue-gallery :photos="photos2" id="gallery2"></vue-gallery>
+          <vue-gallery :photos="bugphotos" id="gallery2"></vue-gallery>
+          <vue-gallery :photos="homephotos" id="gallery3"></vue-gallery>
+          <vue-gallery :photos="snowphotos" id="gallery4"></vue-gallery>
+          <vue-gallery :photos="bwphotos" id="gallery5"></vue-gallery>
         </div>
-
 
         <div>
           <h4 onclick="setPhotos(1);">into the fog</h4>
           <h4 onclick="setPhotos(2);">Insects</h4>
+          <h4 onclick="setPhotos(3);">a place called home</h4>
+          <h4 onclick="setPhotos(4);">snow</h4>
+          <h4 onclick="setPhotos(5);">bw</h4>
         </div>
       </div>
       

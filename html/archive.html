@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
 
-    <title>Jasper Gass - Archive</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/flexbox.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
-  </head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
 
-  <body>
-    <div class="cursor"></div>
-    
-    <header>
-      
-    </header>
-    <nav>
-      <div class="nav-left">
-        <a class="no-underline" href="../index.html"><h1>JG</h1></a>
-        <a href="../index.html"><img src="../img/cursor-white-hover.svg"></a>
-      </div>
-      <div class="nav-right">
-        <div class="expanded">
-          <ul>
-            <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
-            <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
-            <li><a class="no-underline" href="../html/responsiveweb.html">Responsive Web, </a></li>
-            <li><a class="no-underline" href="../html/mobileprototype.html">Mobile Prototype, </a></li>
-            <li><a href="../html/archive.html">Archive</a></li>
-          </ul>
-        </div>
+  <title>Jasper Gass - Archive</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/flexbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'>
+</head>
 
-        <div class="condensed">
-          <button id="menu-button" onclick="showMenu()">Menu</button>
-        </div>
-      </div>
-    </nav>
+<body>
+  <div class="cursor"></div>
 
-    <div class="body-box">
-      <div id="menu-content" class="menu-content">
+  <header>
+
+  </header>
+  <nav>
+    <div class="nav-left">
+      <a class="no-underline" href="../index.html">
+        <h1>JG</h1>
+      </a>
+      <a href="../index.html"><img src="../img/cursor-hover.svg"></a>
+    </div>
+    <div class="nav-right">
+      <div class="expanded">
         <ul>
           <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
           <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
@@ -51,26 +37,62 @@
           <li><a href="../html/archive.html">Archive</a></li>
         </ul>
       </div>
-       
-      <section id="projects" class="top-section">
-        <h2>Projects</h2>
 
-      </section>
-
-      <section id="Gallery">
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-
-        </div>
-        
-      </section>
+      <div class="condensed">
+        <button id="menu-button" onclick="showMenu()">Menu</button>
+      </div>
     </div>
-    
-   
-    <!-- script -->
-    
-    <script  src="../script.js"></script>
+  </nav>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../script.js"></script>
-  </body>
+  <div class="body-box">
+    <div id="menu-content" class="menu-content">
+      <ul>
+        <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
+        <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
+        <li><a class="no-underline" href="../html/responsiveweb.html">Responsive Web, </a></li>
+        <li><a class="no-underline" href="../html/mobileprototype.html">Mobile Prototype, </a></li>
+        <li><a href="../html/archive.html">Archive</a></li>
+      </ul>
+    </div>
+
+    <section id="projects" class="top-section">
+      <h2>Projects</h2>
+
+    </section>
+
+    <section id="Gallery" >
+      <h2>Photo Gallery</h2>
+      <div class="archive">
+        
+        
+        <div class="gallery-container" id="app">
+          <vue-gallery :photos="fogphotos" id="gallery1"></vue-gallery>
+          <vue-gallery :photos="bugphotos" id="gallery2"></vue-gallery>
+          <vue-gallery :photos="homephotos" id="gallery3"></vue-gallery>
+          <vue-gallery :photos="snowphotos" id="gallery4"></vue-gallery>
+          <vue-gallery :photos="bwphotos" id="gallery5"></vue-gallery>
+        </div>
+
+        <div>
+          <h4 onclick="setPhotos(1);">into the fog</h4>
+          <h4 onclick="setPhotos(2);">Insects</h4>
+          <h4 onclick="setPhotos(3);">a place called home</h4>
+          <h4 onclick="setPhotos(4);">snow</h4>
+          <h4 onclick="setPhotos(5);">bw</h4>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+
+  <!-- script -->
+
+  <script src="../script.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+  <script src="../script.js"></script>
+</body>
+
 </html>
