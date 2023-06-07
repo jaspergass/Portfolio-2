@@ -1,97 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
+  <title>List with Full-Width Line</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-  <title>Jasper Gass - Archive</title>
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link href="../css/main.css" rel="stylesheet">
-  <link href="../css/flexbox.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/animations.css">
-  <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .text {
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    .line {
+      flex-grow: 1;
+      height: 1px;
+      background-color: #000;
+      visibility: hidden;
+    }
+
+    .list-item:hover .line {
+      visibility: visible;
+    }
+  </style>
 </head>
-
 <body>
-  <div class="cursor"></div>
-
-  <header>
-
-  </header>
-  <nav>
-    <div class="nav-left">
-      <a class="no-underline" href="../index.html">
-        <h1>JG</h1>
-      </a>
-      <a href="../index.html"><img src="../img/cursor-white-hover.svg"></a>
+  <div class="container">
+    <div class="list-item">
+      <span class="text">Item 1</span>
+      <div class="line"></div>
     </div>
-    <div class="nav-right">
-      <div class="expanded">
-        <ul>
-          <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
-          <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
-          <li><a class="no-underline" href="../html/responsiveweb.html">Responsive Web, </a></li>
-          <li><a class="no-underline" href="../html/mobileprototype.html">Mobile Prototype, </a></li>
-          <li><a href="../html/archive.html">Archive</a></li>
-        </ul>
-      </div>
-
-      <div class="condensed">
-        <button id="menu-button" onclick="showMenu()">Menu</button>
-      </div>
+    <div class="list-item">
+      <span class="text">Item 2</span>
+      <div class="line"></div>
     </div>
-  </nav>
-
-  <div class="body-box">
-    <div id="menu-content" class="menu-content">
-      <ul>
-        <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
-        <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
-        <li><a class="no-underline" href="../html/responsiveweb.html">Responsive Web, </a></li>
-        <li><a class="no-underline" href="../html/mobileprototype.html">Mobile Prototype, </a></li>
-        <li><a href="../html/archive.html">Archive</a></li>
-      </ul>
+    <div class="list-item">
+      <span class="text">Item 3</span>
+      <div class="line"></div>
     </div>
-
-    <section id="projects" class="top-section">
-      <h2>Projects</h2>
-
-    </section>
-
-    <section id="Gallery" >
-      <div class="archive">
-        <h2>Photo Gallery</h2>
-        
-        <div class="gallery-container" id="app">
-          <vue-gallery :photos="fogphotos" id="gallery1"></vue-gallery>
-          <vue-gallery :photos="bugphotos" id="gallery2"></vue-gallery>
-          <vue-gallery :photos="homephotos" id="gallery3"></vue-gallery>
-          <vue-gallery :photos="snowphotos" id="gallery4"></vue-gallery>
-          <vue-gallery :photos="bwphotos" id="gallery5"></vue-gallery>
-        </div>
-
-        <div>
-          <h4 onclick="setPhotos(1);">into the fog</h4>
-          <h4 onclick="setPhotos(2);">Insects</h4>
-          <h4 onclick="setPhotos(3);">a place called home</h4>
-          <h4 onclick="setPhotos(4);">snow</h4>
-          <h4 onclick="setPhotos(5);">bw</h4>
-        </div>
-      </div>
-      
-    </section>
+    <div class="list-item">
+      <span class="text">Item 4</span>
+      <div class="line"></div>
+    </div>
   </div>
-
-
-  <!-- script -->
-
-  <script src="../script.js"></script>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
-  <script src="../script.js"></script>
 </body>
-
 </html>

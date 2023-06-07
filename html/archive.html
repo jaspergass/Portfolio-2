@@ -56,29 +56,117 @@
     </div>
 
     <section id="projects" class="top-section">
-      <h2>Projects</h2>
+      <h2 class="archive-titles">Projects</h2>
+      <div class="archive-list">
+        
+        <div class="gallery-options">
+          <div class="project-title gallery-option-item" onclick="location.href='../html/arcanamini.html';">
+            <h3>Arcana Mini App</h3>
+            <p>Spring 2023</p>
+            <img src="../img/arcana_mini/arcanamini_banner.png">
+            <div class="line"></div>
+          </div>
+          <div class="project-title gallery-option-item" onclick="location.href='../html/responsiveweb.html';">
+            <h3>Responsive Web</h3>
+            <p>Fall 2022</p>
+            <img src="../img/responsive_web/responsive-web-overview.png">
+            <div class="line"></div>
+          </div>
+          <div class="project-title gallery-option-item" onclick="location.href='../html/mobileprototype.html';">
+            <h3>Mobile Prototype</h3>
+            <p>Fall 2022</p>
+            <img src="../img/mobile_prototype/mobile-prototype.png"> 
+            <div class="line"></div>
+          </div>
+            
+          <!-- <div class="project-title gallery-option-item">
+            <h3>Arcana Mini</h3>
+            <p>Spring 2023</p>
+            <img src="../img/Gallery/snow/snow1.jpg"> 
+            <div class="line"></div>
+          </div>
 
+          <div class="project-title gallery-option-item">
+            <h3>Arcana Mini</h3>
+            <p>Spring 2023</p>
+            <img src="../img/Gallery/bw/bw1.jpg"> 
+            <div class="line"></div>
+          </div> -->
+        </div>
+      </div>
     </section>
 
     <section id="Gallery" >
-      <h2>Photo Gallery</h2>
+      <h2 class="archive-titles">Photo Gallery</h2>
       <div class="archive">
         
         
         <div class="gallery-container" id="app">
-          <vue-gallery :photos="fogphotos" id="gallery1"></vue-gallery>
-          <vue-gallery :photos="bugphotos" id="gallery2"></vue-gallery>
-          <vue-gallery :photos="homephotos" id="gallery3"></vue-gallery>
-          <vue-gallery :photos="snowphotos" id="gallery4"></vue-gallery>
-          <vue-gallery :photos="bwphotos" id="gallery5"></vue-gallery>
+          <div id="gallery1">
+            <vue-gallery :photos="fogphotos" ></vue-gallery>
+            <p>This collection was taken in New Westminster BC, 2022. I moved to BC recently and decided 
+              to explore the area and take some pictures. The fog was so thick this day that the horizon 
+              line was invisible. There was only white, glowing fog.</p>
+          </div>
+
+          <div id="gallery2">
+            <vue-gallery :photos="bugphotos" ></vue-gallery>
+            <p>These pictures were taken in Saskatoon Saskatchewan in the summer of 2019. Insects have 
+              always fascinated me and  I really enjoy exploring the world through a micro lens.</p>
+          </div>
+
+          <div id="gallery3">
+            <vue-gallery :photos="homephotos" ></vue-gallery>
+            <p>I took these photos in the town I grew up in, Forrest Lake Minnesota, in the year 2020. 
+              The heart of these photos is in nostalgia and soft light.</p>
+          </div>
+
+          <div id="gallery4">
+            <vue-gallery :photos="snowphotos" ></vue-gallery>
+            <p>I took these in Invermere, 2022, on 35mm film. I loved learning to shoot film, and theres
+               a softness about the medium that works well with the quietude and stillness of the snow that 
+               I really like here.</p>
+          </div>
+
+          <div id="gallery5">
+            <vue-gallery :photos="bwphotos" ></vue-gallery>
+            <p>These photos were taken in Grand Cayman in 2020 for my high school IB art collection. 
+              They were inspired by the works of Imogen Cunningham. I learned how to compose in black 
+              and white by applying the monochrome filter on my camera while shooting rather than adding it in post. </p>
+          </div>
+          
+          
+          
         </div>
 
-        <div>
-          <h4 onclick="setPhotos(1);">into the fog</h4>
-          <h4 onclick="setPhotos(2);">Insects</h4>
-          <h4 onclick="setPhotos(3);">a place called home</h4>
-          <h4 onclick="setPhotos(4);">snow</h4>
-          <h4 onclick="setPhotos(5);">bw</h4>
+        <div class="gallery-options">
+          <div onclick="setPhotos(1);" class="gallery-option-item">
+            <h4>into the fog</h4>
+            <img src="../img/Gallery/fog/fog1.jpg">
+            <div class="line"></div>
+          </div>
+          <div onclick="setPhotos(2);" class="gallery-option-item">
+            <h4>insects</h4>
+            <img src="../img/Gallery/insects/gallery1-3x.jpg">
+            <div class="line"></div>
+          </div>
+          <div onclick="setPhotos(3);" class="gallery-option-item">
+            <h4>a place called home</h4>
+            <img src="../img/Gallery/home/home1.jpg"> 
+            <div class="line"></div>
+          </div>
+            
+          <div onclick="setPhotos(4);" class="gallery-option-item">
+            <h4>snow</h4>
+            <img src="../img/Gallery/snow/snow1.jpg"> 
+            <div class="line"></div>
+          </div>
+
+          <div onclick="setPhotos(5);" class="gallery-option-item">
+            <h4>monochrome</h4>
+            <img src="../img/Gallery/bw/bw1.jpg"> 
+            <div class="line"></div>
+          </div>
         </div>
       </div>
       

@@ -348,5 +348,57 @@ nav button{
   display:none;
 }
 
+.gallery-options{
+  margin-top:1em;
+  margin-bottom:8em;
+}
 
+.gallery-option-item{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display:flex;
+	-webkit-flex-wrap: row;
+	-ms-flex-wrap: row;
+	flex-wrap: row;
+}
+
+.line {
+  flex-grow: 1;
+  height: 0.1em;
+  background-color: #000;
+  visibility: hidden;
+}
+.gallery-option-item img{
+  position:absolute;
+  left:50vw;
+  width:20%;
+  max-height:10em;
+  object-fit: contain;
+  visibility:hidden;
+}
+.gallery-option-item:hover .line{
+  visibility: visible;
+}
+.gallery-option-item:hover img{
+  visibility: visible;
+}
+@media(max-width:55em){
+  .gallery-option-item img{
+    left:66vw;
+  }
+}
+@media(max-width:40em){
+  .gallery-option-item:hover img{
+    visibility: hidden; /* only shows lines, not images after screen gets too small */
+  }
+}
+
+
+
+.archive-list{
+  width:100%;
+}
+.archive-titles{
+  flex:100%;
+}
 
