@@ -132,26 +132,7 @@ new Vue({
       '../img/gallery/insects/gallery5-2x.jpg',
       '../img/gallery/insects/gallery6-2x.jpg'
     ],
-    // bugset:[
-    //   '../img/insects/gallery1-1x.jpg',
-    //   '../img/insects/gallery1-2x.jpg',
-    //   '../img/insects/gallery1-3x.jpg',
-    //   '../img/insects/gallery2-1x.jpg',
-    //   '../img/insects/gallery2-2x.jpg',
-    //   '../img/insects/gallery2-3x.jpg',
-    //   '../img/insects/gallery3-1x.jpg',
-    //   '../img/insects/gallery3-2x.jpg',
-    //   '../img/insects/gallery3-3x.jpg',
-    //   '../img/insects/gallery4-1x.jpg',
-    //   '../img/insects/gallery4-2x.jpg',
-    //   '../img/insects/gallery4-3x.jpg',
-    //   '../img/insects/gallery5-1x.jpg',
-    //   '../img/insects/gallery5-2x.jpg',
-    //   '../img/insects/gallery5-3x.jpg',
-    //   '../img/insects/gallery6-1x.jpg',
-    //   '../img/insects/gallery6-2x.jpg',
-    //   '../img/insects/gallery6-3x.jpg',
-    // ]
+   
     bwphotos: [
       '../img/gallery/bw/bw1.jpg',
       '../img/gallery/bw/bw2.jpg',
