@@ -333,7 +333,7 @@ nav button{
 }
 .vueGallery .thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(calc(4em + 6vw), 1fr));
   grid-gap: 5px;
 }
 .vueGallery .thumbnails div {
