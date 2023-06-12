@@ -9,7 +9,8 @@ body{
 h1{
   font-family:"sheepman";
   font-weight: 400;
-  font-size:3em;
+  /* font-size:3em; */
+  font-size:calc(2.8em + 0.3vw);
   margin:0;
   margin-bottom:0.2em;
   
@@ -18,21 +19,24 @@ h1{
 h2{
   font-family:"shackleton";
   font-weight: 400;
-  font-size:2.2em;
+  /* font-size:2.2em; */
+  font-size:calc(2em + 0.3vw);
   margin:0;
   
 }
 
 h3{
   font-family:"open-sans";
-  font-size:1.7em;
+  /* font-size:1.7em; */
+  font-size:calc(1.5em + 0.3vw);
   margin:0;
   font-weight: 400;
 }
 
 h4{ 
   font-family:"open-sans";
-  font-size:1.4em;
+  /* font-size:1.4em; */
+  font-size:calc(1.2em + 0.3vw);
   margin:0;
   padding:0;
   font-weight: 300;
@@ -40,7 +44,8 @@ h4{
 
 h5{
   font-family:"open-sans";
-  font-size:1em;
+  /* font-size:1em; */
+  font-size:calc(0.8em + 0.3vw);
   margin-top:0.25em;
   margin-bottom:0.25em;
   font-weight: 300;
@@ -48,7 +53,8 @@ h5{
 
 p{
   font-family:"open-sans";
-  font-size:1.2em;
+  /* font-size:1.2em; */
+  font-size:calc(1em + 0.3vw);
   line-height:1.6em;
   margin:0;
 }
@@ -153,7 +159,8 @@ nav ul, .menu-content ul{
 }
 nav li{
   float: left;
-  font-size:1.4em;
+  /* font-size:1.4em; */
+  font-size:calc(1.2em + 0.3vw);
 }
 nav li:not(:last-child) { margin-right: 0.5em;  }
 nav li:last-child{ margin-left:3em; }
@@ -177,7 +184,8 @@ nav button{
   border:none;
   margin:0;
   padding:auto;
-  font-size:1.4em;
+  /* font-size:1.4em; */
+  font-size:calc(1.2em + 0.3vw);
   font-weight:700;
 }
 
@@ -216,8 +224,8 @@ nav button{
 }
 
 .menu-content li{
-  font-size:1.6em;
-  
+  /* font-size:1.6em; */
+  font-size:calc(1.4em + 0.3vw);
 }
 
 /* // Navigation bar */
@@ -267,22 +275,24 @@ nav button{
   position:absolute;
   color:white;
   text-align: right;
-  top:38vh;
+  top:32vh;
   right:2em;
   mix-blend-mode:exclusion;
   z-index: 100;
 }
 .header-title h1{
-  font-size: 20vmin;
+  font-size:calc(4em + 8vw);
   margin-bottom:0.04em;
 }
 .header-title h3{
-  font-size:4vmin;
+  /* font-size:4vmin; */
+  font-size:calc(1em + 1.5vw);
   font-weight:700;
+
 }
 
 
-/* paste */
+/* Gallery */
 
 .gallery-container {
   background-color: #fff;
@@ -307,7 +317,7 @@ nav button{
   position: absolute;
   outline: none;
   height: 100%;
-  z-index: 10;
+  z-index: 1;
   mix-blend-mode: exclusion;
 }
 .vueGallery .activePhoto button:hover {
@@ -402,3 +412,8 @@ nav button{
   flex:100%;
 }
 
+/* back to top button */
+#myBtn{
+  right:2em;
+  bottom: 2em;
+}
