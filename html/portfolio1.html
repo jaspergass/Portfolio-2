@@ -93,11 +93,15 @@
               <img class="two-img" src="../img/portfolio1/wireframe1.png" alt="The share feature pop up menu.">
             </div>
             <p>I then started filling the site with content. I received feedback from my TA that my personal statement 
-                and projects lacked direction, so I refined my goals to be more specific to UX/UI and web development 
-                work. A good example of this shift is seen in my personal title which I changed from “experience artist 
-                and interaction designer” to “interface and interaction designer.”</p>
-            <p>The rest of the work fell in pace as I simply put the content in and worked on website flexibility. For 
-                an inside look at the html structure of this page, turn off the lights!</p>
+              and projects lacked direction, so I refined my goals to be more specific to UX/UI and web development 
+              work. A good example of this shift is seen in my personal title which I changed from “experience artist 
+              and interaction designer” to “interface and interaction designer.”</p>
+            <div class="box-row">
+                <p>The rest of the work fell in pace as I simply put the content in and worked on website flexibility. For 
+                  an inside look at the html structure of this page, turn off the lights!</p>
+                <button id="lightswitch" class="lightswitch" onclick="showHide('blackbox')"></button>
+            </div>
+            
             <p>One of the most important changes I made while refining this site after the project was due was changing
                  my title font. It was essential to the branding I had created, but after getting a few people to test 
                  my site I got feedback that suggested it was not easy to read. I changed from House of Cards to Sheepman
@@ -117,6 +121,215 @@
         </div>
       </section>
     </div>
+
+    <div class="blackbox" id="blackbox">
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <code>&lt;html lang="en"&gt;</code>
+      <div class="tab1">
+          <code>&lt;head&gt;</code>
+      </div>
+      <div class="tab2">
+          <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>
+          <code>&lt;meta charset="utf-8"&gt;</code>
+          <code>&lt;title&gt;P03 - Portfolio Website&lt;/title&gt;</code>
+          <code>&lt;link rel="stylesheet" href="../css/normalize.css"&gt;</code>
+          <code>&lt;link rel="stylesheet" href="../css/main.css"&gt;</code>
+          <code>&lt;link rel="stylesheet" href="../css/flexbox.css"&gt;</code>
+      </div>
+
+      <div class="tab1">
+          <code>&lt;/head&gt;</code>
+          <code>&lt;body&gt;</code>
+          
+      </div>
+      <div class="tab2"><code>&lt;header&gt;</code></div>
+      <div class="tab3">
+          <code>&lt;div class="header-text-box"&gt;</code>
+          <code>&lt;h4&gt;Passionate interface and interaction designer &lt;/h4 &gt;</code>
+          <code>&lt;h5&gt;Contact: &lt;a href="mailto:jaspergass@outlook.com"&gt; jaspergass@outlook.com&lt;/a&gt;&lt;/h5&gt;</code>
+          <code>&lt;h5&gt;he/they&lt;/h5&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;a href="../index.html"&gt;</code>
+      </div>
+      <div class="tab4">
+          <code>&lt;div class="header-title-box header-cursor"&gt;</code>
+          <code>&lt;h1 class="header-cursor"&gt;Jasper Gass&lt;/h1&gt;</code>
+          <code>&lt;h3 class="header-cursor"&gt;an e-portfolio&lt;/h3&gt;</code>
+          <code>&lt;img class="header-img header-cursor" src="../img/star.svg" alt=""&gt;</code>
+          <code>&lt;div class="header-line header-cursor"&gt;&lt;/div&gt;</code>
+          <code>&lt;/div&gt;</code>
+      </div>
+      <div class="tab3">
+          <code>&lt;/a&gt;</code>
+          <code>&lt;div class="header-box"&gt;&lt;/div&gt;</code>
+      </div>
+      <div class="tab2">
+          <code>&lt;/header&gt;</code>
+          <code>&lt;nav&gt;</code>
+      </div>
+      <code class="tab3">&lt;form action="../index.html"&gt;</code>
+          <code class="tab4">&lt;button&gt;About&lt;/button&gt;</code>
+      <code class="tab3">&lt;/form&gt;</code>
+      <code class="tab3">&lt;form action="../html/portfolio-web.html"&gt;</code>
+          <code class="tab4">&lt;img class="checked-img" src="../img/star.svg" alt=""&gt;</code>
+          <code class="tab4">&lt;button class="nav-button checked"&gt;Portfolio Site&lt;/button&gt;</code>
+      <code class="tab3">&lt;/form&gt;</code>
+      <code class="tab3">&lt;form action="../html/responsive_web.html"&gt;</code>
+          <code class="tab4">&lt;img src="../img/star.svg" alt=""&gt;</code>
+          <code class="tab4">&lt;button class="nav-button"&gt;Responsive Web&lt;/button&gt;</code>
+      <code class="tab3">&lt;/form&gt;</code>
+      <code class="tab3">&lt;form action="../html/mobile_prototype.html"&gt;</code>
+          <code class="tab4">&lt;img src="../img/star.svg" alt=""&gt;</code>
+          <code class="tab4">&lt;button class="nav-button"&gt;Mobile Prototype&lt;/button&gt;</code>
+      <code class="tab3">&lt;/form&gt;</code>
+      <code class="tab3">&lt;form action="../html/installation.html"&gt;</code>
+          <code class="tab4">&lt;img src="../img/star.svg" alt=""&gt;</code>
+          <code class="tab4">&lt;button class="nav-button"&gt;Installation&lt;/button&gt;</code>
+      <code class="tab3">&lt;/form&gt;</code>
+      <div class="tab2">
+          <code>&lt;/nav&gt;</code>
+          <code>&lt;button onclick="topFunction()" id="myBtn" title="Go to top"&gt;Back to Top&lt;/button&gt;</code>
+          <code>&lt;div class="box-column body-box"&gt;</code>
+      </div>
+
+      <div class="tab3">
+          <code>&lt;img class="img-border" src="../img/Portfolio/overview.png" alt="A screenshot of this site's home page."&gt;</code>
+          <code>&lt;h2&gt;Portfolio Website&lt;/h2&gt;</code>
+          <code>&lt;section class="box-column"&gt;</code>
+      </div>
+      <div class="tab4">
+          <code>&lt;h3&gt;Introduction&lt;/h3&gt;</code>
+          <code>&lt;p&gt;</code>
+      </div>
+      <code class="tab5">This portfolio website started as a 3 week long project for a web development class.
+          As an individual project, I was solely responsible. The major components of the site
+               were the style guide, a statement about myself and 2 projects. </code>
+      <div class="tab4">
+          <code>&lt;/p&gt;</code>
+          <code>&lt;p&gt;</code>
+      </div>
+      <code class="tab5">Please note that this current version of the portfolio went through much more
+          development after this assignment to become what it is now. </code>
+      <code class="tab4">&lt;p&gt;</code>
+      <div class="tab3">
+          <code>&lt;/section&gt;</code>
+          <code>&lt;section class="box-column"&gt;</code>
+      </div>
+
+      <div class="tab4">
+          <code>&lt;h3&gt;Process&lt;/h3&gt;</code>
+          <code>&lt;p&gt;</code>
+      </div>
+      <code class="tab5">I had a personal portfolio prior to this project that I adapted from. My previous website,
+          through Wix, was not responsive as seen in the screenshot below where the content gets cut 
+          off on the right side. To see this original site, visit &lt;a href="https://jaspergass.wixsite.com
+          /jjgportfolio"&gt;https://jaspergass.wixsite.com/jjgportfolio&lt;/a&gt;</code>
+      <code class="tab4">&lt;/p&gt;</code>
+      <code class="tab4">&lt;img class="img-border" src="../img/Portfolio/previous_site.png" alt="My previous 
+          website homepage with content being cut off on the right side."&gt;</code>
+      <code class="tab4">&lt;p&gt;</code>
+      <code class="tab5">When creating my style guide I wanted a style minimal enough to let my projects and site
+          content stand out, but also retain some character and uniqueness.</code>
+      <code class="tab5"></code>
+      <code class="tab4">&lt;/p&gt;</code>
+      <code class="tab4">&lt;section id="branding"&gt;</code>
+      <code class="tab5">&lt;div class="element"&gt;</code>
+      <div class="tab6">
+          <code>&lt;div class="visuals"&gt;</code>
+          <code>&lt;div class="box-color"&gt;&lt;/div&gt;</code>
+          <code>&lt;div class="box-color"&gt;&lt;/div&gt;</code>
+          <code>&lt;div class="box-color"&gt;&lt;/div&gt;</code>
+          <code>&lt;div class="box-color"&gt;&lt;/div&gt;</code>
+          <code>&lt;div class="box-color"&gt;&lt;/div&gt;</code>
+          <code>&lt;img class="star-img" src="../img/star.svg" alt=""&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="box-wrap center"&gt;</code>
+      </div>
+      <div class="tab7">
+          <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+      </div>
+      <div class="tab6">
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="box-row center"&gt;</code>
+      </div>
+      <div class="tab7">
+          <code>&lt;button class="button"&gt;Submit&lt;/button&gt;</code>
+          <code>&lt;button class="button"&gt;Reset&lt;/button&gt;</code>
+      </div>
+      <code class="tab6">&lt;/div&gt;</code>
+      <code class="tab5">&lt;/div&gt;</code>
+
+      <div class="tab4">
+          <code>&lt;/section&gt;</code>
+          <code>&lt;p&gt;</code>
+      </div>
+      <code class="tab5">A full view of the site style and components can be found here:</code>
+      <div class="tab4">
+          <code>&lt;/p&gt;</code>
+          <code>&lt;form action="../html/style_guide.html"&gt;</code>
+      </div>
+      <code class="tab5">&lt;button&gt;Style Guide&lt;/button&gt;</code>
+     
+      <code class="tab4">&lt;/form&gt;</code>
+      <code class="tab4">&lt;p&gt;</code>
+      <code class="tab5">&lt;I then made wireframes. The wireframe below shows the layout I chose for 
+          the site, and below it are two 
+          alternative versions of the header I considered.&gt;</code>
+      <code class="tab4">&lt;/p&gt;</code>
+      <code class="tab4">&lt;img class="img-border" src="../img/Portfolio/wireframe3.png" alt="The wireframe
+           option I chose for my website."&gt;</code>
+      <code class="tab4">&lt;div class="box-wrap"&gt;</code>
+      <code class="tab5">&lt;img class="two-img img-border" src="../img/Portfolio/wireframe1.png" alt="An 
+          alternative wireframe option for my website."&gt;</code>
+      <code class="tab5">&lt;img class="two-img img-border" src="../img/Portfolio/wireframe2.png" alt="An 
+          alternative wireframe option for my website."&gt;</code>
+      <code class="tab4">&lt;/div&gt;</code>
+
+
+      <code class="tab4">&lt;div class="box-wrap two-column-box"&gt;</code>
+      <code class="tab5">&lt;div class="box-column two-column"&gt;</code>
+      <code class="tab6">&lt;p&gt;</code>
+      <code class="tab7">I then started filling the site with content. I received feedback from my TA that 
+          my personal statement and projects lacked direction, so I refined my goals to be more specificto 
+          UX/UI and web development work. A good example of this shift is seen in my personal title which I 
+          changed from “experience artist and interaction designer” to “interface and interaction designer.”</code>  
+      <code class="tab6">&lt;/p&gt;</code>
+      <code class="tab6">&lt;p&gt;</code>
+      <code class="tab7">The rest of the work fell in pace as I simply put the content in and worked on 
+          website flexibility. For an inside look at the html structure of this page, turn off the lights!</code>
+      <code class="tab6">&lt;/p&gt;</code>
+      <div class="tab5">
+          <code>&lt;/div&gt;</code>
+          <code>&lt;button id="lightswitch" class="lightswitch" onclick="showHide('blackbox')"&gt;&lt;/button&gt;</code>
+      </div>
+      <code class="tab4">&lt;/div&gt;</code>
+      <code class="tab4">&lt;p&gt;</code>
+      <code class="tab5">One of the most important changes I made while refining this site after the project was due 
+          was changing my title font. It was essential to the branding I had created, but after getting a few people
+          to test my site I got feedback that suggested it was not easy to read. I changed from House of Cards to Sheepman
+          to keep the style but increase legibility.</code>
+      <code class="tab4">&lt;/p&gt;</code>
+      <code class="tab4">&lt;img src="../img/Portfolio/Fonts.png" alt="The word About written in both fonts to show what they look like."&gt;</code>
+      <code class="tab3">&lt;/section&gt;</code>
+
+      <code class="tab3">&lt;section class="box-column"&gt;</code>
+      <code class="tab4">&lt;h3&gt;Reflection&lt;/h3&gt;</code>
+      <code class="tab4">&lt;p&gt;</code>
+
+      <code class="tab5">The most challenging part of this project was honestly refining what my ambitions were. I have a lot of interests so I always find it challenging to narrow down and focus on passions. This project made me realize that I needed more direction and helped me refine my ideas of what career paths I want to work towards. I am excited about the path ahead of me and I hope to refine my skills with this newfound direction.</code>
+
+      <code class="tab4">&lt;/p&gt;</code>
+      <code class="tab3">&lt;/section&gt;</code>
+      <code class="tab2">&lt;/div&gt;</code>
+      <code class="tab2">&lt;script src="../script.js"&gt;&lt;/script&gt;</code>
+      <div class="tab1">
+          <code>&lt;/body&gt;</code>
+      </div>
+      <code>&lt;/html&gt;</code>
+  </div> 
    
     <!-- script -->
     

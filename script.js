@@ -91,3 +91,27 @@ function showMenu() {
     button.innerHTML = "Menu";
   }
 }
+
+//adapted from https://codepen.io/Pennedweb/pen/LYNpoZb
+function showHide(ele) {
+  var srcElement = document.getElementById(ele);
+  var lightswitch = document.getElementById("lightswitch");
+  var page = document.getElementsByClassName("tohide");
+  if (srcElement != null) {
+      if (srcElement.style.display == "block") {
+          srcElement.style.display = 'none';
+          lightswitch.style.backgroundImage = "url(../img/switch.jpg)";
+          for(i=0; i<page.length; i++){
+            page[i].style.display = 'block';
+          }
+      }
+      else {
+          srcElement.style.display = 'block';
+          lightswitch.style.backgroundImage = "url(../img/switch2.jpg)";
+          for(i=0; i<page.length; i++){
+            page[i].style.display = 'none';
+          }
+      }
+      return false;
+  }
+}
