@@ -45,7 +45,13 @@
     <!-- BACK TO TOP BUTTON -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
-    <div class="body-box">
+    <div class="video-wrapper">
+      <video  autoplay muted loop poster="">
+        <source src="./img/bgvideo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="nav-background"></div>
+    <div class="body-box" id="index">
       <div id="menu-content" class="menu-content">
         <ul>
           <li><a href="./index.html">Portfolio, </a></li>
@@ -55,12 +61,8 @@
           <li><a class="no-underline" href="./html/archive.html">Archive</a></li>
         </ul>
       </div>
-       
-        <div class="video-wrapper">
-          <video  autoplay muted loop poster="">
-            <source src="./img/bgvideo.mp4" type="video/mp4">
-          </video>
-        </div>
+      
+        
         
         <div id="header-title" class="header-title">
           <h1>Jasper Gass</h1>
@@ -88,9 +90,59 @@
           <p>contact: jaspergass@outlook.com</p>
         </div>
       </section>
+      <section id="Introduction">
+        <div class="section-left">
+          <h4>Introduction</h4>
+        </div>
+        <div class="section-right">
+          <p>I made this website over the course of 2 months. I made a portfolio in Fall 2022 but felt that
+             it needed to be improved (to see that project, click here). My goal with this project was to 
+             improve the visual style of my site and include an archive to view past works and my photography.</p>
+        </div>
+      </section>
       <section id="Process">
         <div class="section-left">
           <h4>Process</h4>
+        </div>
+        <div class="section-right">
+          <p>I drew a lot of inspiration for this site from Locomotive https://locomotive.ca/en, a Montreal 
+            based design agency that I admire a lot. I also knew I wanted to re-do a video project I did in high 
+            school that used milk, food colouring, soap, and oil to create an abstract montage for my home page.</p>
+          <p>I began by creating many mockups in figma, quickly iterating through different ideas for menu systems
+            and content layouts to explore my options. I ultimately decided that many of my ideas were overly complex;
+             I wanted something simple, refined, and easy to understand. Thats why I chose this very simple navigation
+              system and structure for all my pages. To make my site stand out, the video and effect on the text on
+               the home page and my cursor are much more visually complex to balance out the simplicity of the website’s
+                structure. </p>
+          <img src="./img/portfolioMockups.png">
+        </div>
+      </section>
+      <section id="Challenges">
+        <div class="section-left">
+          <h4>Challenges</h4>
+        </div>
+        <div class="section-right">
+          <p>I spent a long time trying to get the site as responsive as possible. To catch any errors, 
+            I had several friends test the website to get their feedback and find any flaws. Some key instances
+             of responsiveness are my text sizes which grow and shrink using a calculation based on the viewport
+              size and the navigation bar that condenses into a menu button at smaller resolutions.</p>
+          <p>I also spent a long time getting my photo gallery on the archive page to work. I modified someone’s 
+            code from codepen so that I could change out the collection of images being displayed to showcase my 
+            different photography collections. This took several hours of troubleshooting to modify and make responsive.
+             I am unfamiliar with the component it uses, called a vue gallery, but after spending some time to understand 
+             the code I managed to make it do what I wanted. In the future, I would love to make my own from scratch to
+              improve my coding skills and get the exact behaviour I want.</p>
+
+          <div class="box-wrap">
+            <img class="two-img" src="./img/PortfolioResponsiveness.gif" alt="An error prompt for deleting an account.">
+            <img class="two-img" src="./img/portfolioGallery.gif" alt="The share feature pop up menu.">
+          </div>
+        </div>
+      </section>
+
+      <section id="Reflection">
+        <div class="section-left">
+          <h4>Reflection</h4>
         </div>
         <div class="section-right">
           <p>text</p>
