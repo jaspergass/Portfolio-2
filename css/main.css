@@ -208,7 +208,7 @@ nav button{
   position: sticky;
   top:-0.01em;
   width:100%;
-  height:3em;
+  height:3.5em;
   margin:0em;
   z-index:99;
   
@@ -486,4 +486,12 @@ nav button{
 }
 .blackbox .tab7{
   text-indent:14em;
+}
+
+/* touch screen no cursor */
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: 'none';
+    background-image: none;
+  }
 }
