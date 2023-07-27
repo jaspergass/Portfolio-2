@@ -76,6 +76,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
   };
 });
 
+// $(window).resize(function() {
+//   if (window.innerWidth <= 768) {
+//     var cursor = $(".cursor")
+//     cursor.remove()
+//     $('body').css({
+//       cursor: "default",
+//     })
+//   } else {
+//     $('body').css({
+//       cursor: "none",
+//     })
+//     customCursor()
+//   }
+// });
+
 // Collapsed menu
 function showMenu() {
   var menucontent = document.getElementById("menu-content");
@@ -121,3 +136,5 @@ const scroller = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true
 });
+
+

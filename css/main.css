@@ -77,9 +77,10 @@ img{
   max-width:100%;
 }
 
-.img-onboarding{
-  padding-left:15%;
-  padding-right:15%;
+
+.img-border{
+  border: black solid ;
+  border-width: calc(0.04em + 0.1vw);
 }
 
 /*---- //IMG ---- */
@@ -92,24 +93,28 @@ img{
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  right:2em;
+  bottom: 2em;
   z-index: 99;
   border: none;
   outline: none;
   background-color: white;
   color: black;
-  
-  padding: 15px;
+  padding: calc(0.6em + 0.2vw);
   border-style:dotted;
   border-width:0.08em;
   border-color:black;
+  font-size:calc(0.8em + 0.3vw);
 }
 
 #myBtn:hover {
   border-style:solid;
 }
 
+#menu-button{
+  background-color: transparent;
+  mix-blend-mode: difference;
+}
 
 input[type="text"]{
   border-style:dotted;
@@ -160,16 +165,20 @@ nav ul, .menu-content ul{
 nav li{
   float: left;
   /* font-size:1.4em; */
-  font-size:calc(1.2em + 0.3vw);
+  font-size:calc(1em + 0.3vw);
 }
 nav li:not(:last-child) { margin-right: 0.5em;  }
 nav li:last-child{ margin-left:3em; }
 nav img{ 
-  max-height:3em;
+  max-height:2.8em;
   height:100%;
 }
 
-nav a h1 { color:black; }
+nav a h1 { 
+  color:black; 
+  font-size:calc(2.6em + 0.3vw);
+}
+
 nav a {
   color:black;
   text-decoration-style: solid;
@@ -184,8 +193,7 @@ nav button{
   border:none;
   margin:0;
   padding:auto;
-  /* font-size:1.4em; */
-  font-size:calc(1.2em + 0.3vw);
+  font-size:calc(1em + 0.3vw);
   font-weight:700;
 }
 
@@ -208,7 +216,7 @@ nav button{
   position: sticky;
   top:-0.01em;
   width:100%;
-  height:3.5em;
+  height:3.3em;
   margin:0em;
   z-index:99;
   
@@ -236,7 +244,7 @@ nav button{
 
 .menu-content li{
   /* font-size:1.6em; */
-  font-size:calc(1.4em + 0.3vw);
+  font-size:calc(1.2em + 0.3vw);
 }
 
 /* // Navigation bar */
@@ -424,11 +432,7 @@ nav button{
   flex:100%;
 }
 
-/* back to top button */
-#myBtn{
-  right:2em;
-  bottom: 2em;
-}
+
 
 .lightswitch{
   background-image: url('../img/switch.jpg');
@@ -489,9 +493,17 @@ nav button{
 }
 
 /* touch screen no cursor */
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none) and (pointer: coarse){
   .cursor {
     display: 'none';
     background-image: none;
   }
+}
+
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1em;
+  margin-top:1em;
 }

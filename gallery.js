@@ -57,12 +57,12 @@ Vue.component('vue-gallery', {
         '../img/gallery/fog/fog5.jpg'
       ],
       bugphotos: [
-        '../img/gallery/insects/gallery1-2x.jpg',
-        '../img/gallery/insects/gallery2-2x.jpg',
-        '../img/gallery/insects/gallery3-2x.jpg',
-        '../img/gallery/insects/gallery4-2x.jpg',
-        '../img/gallery/insects/gallery5-2x.jpg',
-        '../img/gallery/insects/gallery6-2x.jpg'
+        '../img/gallery/insects/gallery1-1x.jpg',
+        '../img/gallery/insects/gallery2-1x.jpg',
+        '../img/gallery/insects/gallery3-1x.jpg',
+        '../img/gallery/insects/gallery4-1x.jpg',
+        '../img/gallery/insects/gallery5-1x.jpg',
+        '../img/gallery/insects/gallery6-1x.jpg'
       ],
      
       bwphotos: [
