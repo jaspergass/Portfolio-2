@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Jasper Gass - First Portfolio Website</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
+    
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    
+    <header>
+      
+    </header>
+    <nav>
+      <div class="nav-left">
+        <a class="no-underline" href="../index.html"><h1>JG</h1></a>
+        <a href="../index.html"><img src="../img/cursor-hover.svg"></a>
+      </div>
+      <div class="nav-right">
+        <div class="expanded">
+          <ul>
+            <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
+            <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
+            <li><a class="no-underline" href="../html/responsiveweb.html"">Responsive Web, </a></li>
+            <li><a class="no-underline" href="../html/mobileprototype.html">Mobile Prototype</a></li>
+            <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+          </ul>
+        </div>
+
+        <div class="condensed">
+          <button id="menu-button" onclick="showMenu()">Menu</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+    
+    <div class="body-box">
+      <div id="menu-content" class="menu-content">
+        <ul>
+          <li><a class="no-underline" href="../index.html">Portfolio, </a></li>
+          <li><a class="no-underline" href="../html/arcanamini.html">Arcana Mini App, </a></li>
+          <li><a class="no-underline" href="../html/responsiveweb.html">Responsive Web, </a></li>
+          <li><a class="no-underline" href="../html/mobileprototype.html">Mobile Prototype, </a></li>
+          <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+        </ul>
+      </div>
+       
+      <section class="top-section">
+        <img src="../img/portfolio1/overview.png" alt="Several screens of the mobile project.">
+        <div class="project-title">
+          <h2>Portfolio Website</h2>
+          <h4>Summer 2023</h4>
+        </div> 
+      </section>
+
+      <section id="Introduction">
+        <div class="section-left">
+          <h4>Introduction</h4>
+        </div>
+        <div class="section-right">
+          <p>This website was developed over the course of 2 months. I made a portfolio in Fall 2022 but felt that
+             it needed to be improved (to see that project, <a href="../html/portfolio1.html">click here</a>). My goal
+              with this project was to improve the visual style of my site, and to include an archive to view my past
+               works and photography.</p>
+        </div>
+      </section>
+      <section id="Process">
+        <div class="section-left">
+          <h4>Process</h4>
+        </div>
+        <div class="section-right">
+          <p>I drew a lot of inspiration for this site from <a target="_blank" rel="noopener noreferrer" href="https://locomotive.ca/en">Locomotive</a>; a Montreal 
+            based design agency that I admire a lot. I also knew I wanted to re-do a video project I did in high 
+            school that used milk, food colouring, soap, and oil to create an abstract montage for my home page.</p>
+          <p>I began by creating many mockups in Figma, quickly iterating through different ideas for menu systems
+            and content layouts to explore my options. I ultimately decided that many of my ideas were overly complex;
+             I wanted something simple, refined, and easy to understand. Thats why I chose this very simple navigation
+              system and structure for all my pages. To make my site stand out, the visual complexity of the video and
+               the home page text effects balance out the simplicity of the website’s structure.  </p>
+          <img src="../img/portfoliomockups.png">
+          <p>In order to make my cursor have a unique shape and mixed blend mode effect through CSS, it needed to be 
+            an actual object on the page instead of the normal cursor. To achieve this, I hid the real cursor and 
+            created an object on the page that moves using javascript and applied the blend mode. </p>
+          <p>The video component to my home page was key to the site’s character. While prototyping, I used a clip 
+            of old footage from high school that I took on a camcorder. I didn’t want to use this footage for my site
+             because the visual style from the camcorder is too rough for the clean and modern style I was aiming for.
+              I filmed new footage on my XXXX camera. Below is what the site looked like using the placeholder footage,
+               and what it looked like when I was editing the new clips in Adobe Premiere.</p>
+          <div class="two-img-box">
+            <img class="two-img" src="../img/placeholder_bg.gif" alt="An error prompt for deleting an account.">
+            <img class="two-img" src="../img/videoEditing.png" alt="The share feature pop up menu.">
+          </div>
+          <p>I also used Git to save my progress. I didn’t run into any issues in development that required reverting
+             the project to previous versions, but it was still good practice to make sure that none of my work got lost
+              and was easily traceable.</p>
+          <img src="../img/gitUse.png">
+        </div>
+      </section>
+      <section id="Challenges">
+        <div class="section-left">
+          <h4>Challenges</h4>
+        </div>
+        <div class="section-right">
+          <p>I spent a long time trying to get the site as responsive as possible. To catch any errors, 
+            I had several friends test the website to get their feedback and find any flaws. Some key instances
+             of responsiveness are my text sizes which grow and shrink using a calculation based on the viewport
+              size and the navigation bar that condenses into a menu button at smaller resolutions.</p>
+          <p>I also spent a long time getting my photo gallery on the archive page to work. I modified someone’s 
+            code from CodePen, so that I could change out the collection of images being displayed to showcase my 
+            different photography collections. This took several hours of troubleshooting to modify and make responsive.
+             I am unfamiliar with the component it uses, called a vue gallery, but after spending some time to understand 
+             the code I managed to make it do what I wanted. In the future, I would love to make my own from scratch to
+              improve my coding skills and get the exact behaviour I want.</p>
+
+          <div class="two-img-box">
+            <img class="two-img" src="../img/PortfolioResponsiveness.gif" alt="An error prompt for deleting an account.">
+            <img class="two-img" src="../img/portfolioGallery.gif" alt="The share feature pop up menu.">
+          </div>
+        </div>
+      </section>
+
+      <section id="Reflection">
+        <div class="section-left">
+          <h4>Reflection</h4>
+        </div>
+        <div class="section-right">
+          <p>After finishing this project, I feel very accomplished. I achieved what I set out to do and learned 
+            a lot in the process. I have a much greater understanding of javascript for websites.
+            This updated portfolio is a much better representation of me and my skills. Unfortunately, I am sure 
+            that within a few months of developing my skills further at school I will feel like this site is outdated
+             again. I hope that because this one is more robust than my first I can continue to update it as 
+             I develop my skills.</p>
+          
+        </div>
+      </section>
+    </div>
+
+   
+    <!-- script -->
+    
+    <script  src="../script.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../script.js"></script>
+  </body>
+</html>
