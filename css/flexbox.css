@@ -292,12 +292,12 @@ nav{
 }
 
 @media(max-width:64em){
-	.nav-right .expanded{
+	/* .nav-right .expanded{
 		display: none;
 	}
 	.nav-right .condensed{
 		display: inline-block;
-	}
+	} */
 	.two-img{
 	  	width: 100%;
 		padding:0em;
