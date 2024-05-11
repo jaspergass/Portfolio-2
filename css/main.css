@@ -186,6 +186,9 @@ nav a {
 nav a:hover, nav a:active{ color:black; }
 
 nav .no-underline, .menu-content .no-underline{ text-decoration: none; }
+.no-underline{
+  text-decoration: none;
+}
 
 nav button{
   color:white;
@@ -212,6 +215,7 @@ button:hover {
   background-color: black;
   color:white;
 }
+
 
 /* index page nav */
 .index a h1{ color:white; }
