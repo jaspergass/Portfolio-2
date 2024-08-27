@@ -58,6 +58,12 @@ p{
   line-height:1.6em;
   margin:0;
 }
+li{
+  font-family:"open-sans";
+  font-size:calc(1em + 0.3vw);
+  line-height:1.6em;
+  margin:0;
+}
 
 .italic{
   font-style:italic;
