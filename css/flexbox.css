@@ -17,7 +17,8 @@
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 
-	gap:1em;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .box-row{
@@ -29,6 +30,7 @@
 	flex-direction: row;
 	gap:1em;
 }
+
 
 .box-column{
 	display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -239,9 +241,11 @@ nav{
 .three-img{
 	width:30%;
 }
+
 .four-img{
 	width:23%;
 }
+
 
 .two-img-box::after {
 	content: "";
