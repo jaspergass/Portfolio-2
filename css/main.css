@@ -339,7 +339,7 @@ button:hover {
 }
 @media(max-width:40em){
   .header-title{
-    top: 8vh;
+    top: calc(7vh+2em);
   }
 }
 
