@@ -10,7 +10,7 @@
     <link href="../css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
+    <link rel="stylesheet" href="../css/glightbox.min.css">
   </head>
 
   <body>
@@ -91,14 +91,14 @@
               The first week of this project we spent refining the app proposal and identity. We worked in Figma to create 
               a mood board and basic wireframes to capture the idea of the app. 
             </p>
-            <img src="../img/arcana_mini/moodboard.png" alt="A moodboard to capture the project's aesthetic goals.">
+            <a class="glightbox"href="../img/arcana_mini/moodboard.png"><img src="../img/arcana_mini/moodboard.png" alt="A moodboard to capture the project's aesthetic goals."></a>
             <p>
               Once our proposal was accepted, we worked on the flow of the app. This was crucial because the structure of
                our app in Android Studio would be informed by the flow and activities that the app needs to have. 
             </p>
             <div class="two-img-box">
-              <img class="two-img" src="../img/arcana_mini/basic_wireframes.png" alt="An error prompt for deleting an account.">
-              <img class="two-img" src="../img/arcana_mini/final_wireframes.png" alt="The share feature pop up menu.">
+              <a class="two-img glightbox" href="../img/arcana_mini/basic_wireframes.png" ><img src="../img/arcana_mini/basic_wireframes.png" alt="An error prompt for deleting an account."></a>
+              <a class="two-img glightbox" href="../img/arcana_mini/final_wireframes.png"><img src="../img/arcana_mini/final_wireframes.png" alt="The share feature pop up menu."></a>
             </div>
             <p>
               We also set up our Git workspace in this first week so that we could collaborate on our code. We set up
@@ -111,12 +111,12 @@
                  but we added more content to it after deciding that the app needed a little more functionality. 
             </p>
             <div class="two-img-box">
-              <img class="arcana-img3" src="../img/arcana_mini/calendar-wireframes.png" alt="An error prompt for deleting an account.">
-              <img class="arcana-img4" src="../img/arcana_mini/archive.png" alt="The share feature pop up menu.">
+              <a class="arcana-img3 glightbox" href="../img/arcana_mini/calendar-wireframes.png"><img src="../img/arcana_mini/calendar-wireframes.png" alt="An error prompt for deleting an account."></a>
+              <a class="arcana-img4 glightbox" href="../img/arcana_mini/archive.png"><img src="../img/arcana_mini/archive.png" alt="The share feature pop up menu."></a>
             </div>
             <div class="two-img-box">
-                <img class="arcana-img1" src="../img/arcana_mini/onboarding-wireframe.png" alt="An error prompt for deleting an account.">
-                <img class="arcana-img2" src="../img/arcana_mini/onboarding.gif" alt="The share feature pop up menu.">
+                <a class="arcana-img1 glightbox" href="../img/arcana_mini/onboarding-wireframe.png"><img src="../img/arcana_mini/onboarding-wireframe.png" alt="An error prompt for deleting an account."></a>
+                <a class="arcana-img2 glightbox" href="../img/arcana_mini/onboarding.gif"><img src="../img/arcana_mini/onboarding.gif" alt="The share feature pop up menu."></a>
             </div>
         </div>
       </section>
@@ -169,14 +169,14 @@
         </div>
         <div class="section-right">
             <div class="box-wrap">
-              <img class="three-img" src="../img/arcana_mini/home.png" alt="The app home page.">
-              <img class="three-img" src="../img/arcana_mini/settingspage.png" alt="The app settings page.">
-              <img class="three-img" src="../img/arcana_mini/searchview.png" alt="The search function in the guidebook.">
+              <a class="three-img glightbox" href="../img/arcana_mini/home.png"><img src="../img/arcana_mini/home.png" alt="The app home page."></a>
+              <a class="three-img glightbox" href="../img/arcana_mini/settingspage.png"><img src="../img/arcana_mini/settingspage.png" alt="The app settings page."></a>
+              <a class="three-img glightbox" href="../img/arcana_mini/searchview.png"><img src="../img/arcana_mini/searchview.png" alt="The search function in the guidebook."></a>
             </div>
             <div class="box-wrap">
-              <img class="three-img" src="../img/arcana_mini/cardinfo.png" alt="A card information page.">
-              <img class="three-img" src="../img/arcana_mini/reflection.png" alt="Adding a new reflection.">
-              <img class="three-img" src="../img/arcana_mini/reflectionmode.png" alt="The timed reflection mode.">
+              <a class="three-img glightbox" href="../img/arcana_mini/cardinfo.png"><img src="../img/arcana_mini/cardinfo.png" alt="A card information page."></a>
+              <a class="three-img glightbox" href="../img/arcana_mini/reflection.png"><img src="../img/arcana_mini/reflection.png" alt="Adding a new reflection."></a>
+              <a class="three-img glightbox" href="../img/arcana_mini/reflectionmode.png"><img src="../img/arcana_mini/reflectionmode.png" alt="The timed reflection mode."></a>
             </div>
         </div>
       </section>
@@ -188,5 +188,10 @@
     <script  src="../js/script.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
   </body>
 </html>
