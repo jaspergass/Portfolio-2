@@ -246,6 +246,9 @@ nav{
 	width:23%;
 }
 
+.glightbox{
+	align-self:center;
+}
 
 .two-img-box::after {
 	content: "";

@@ -10,7 +10,7 @@
     <link href="../css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
+    <link rel="stylesheet" href="../css/glightbox.min.css">
   </head>
 
   <body>
@@ -76,16 +76,17 @@
             <p>I had a personal portfolio prior to this project that I adapted from. My previous website, through Wix, 
                 was not responsive as seen in the screenshot below where the content gets cut off on the right side. 
                 To see this original site, visit <a target="_blank" href="https://jaspergass.wixsite.com/jjgportfolio">https://jaspergass.wixsite.com/jjgportfolio →</a>.</p>
-            <img class="img-border" src="../img/portfolio1/previous_site.png" alt="A screenshot of my very first site I made using a website builder.">
+            <a class="glightbox img-border" href="../img/portfolio1/previous_site.png"><img src="../img/portfolio1/previous_site.png" alt="A screenshot of my very first site I made using a website builder."></a>
+            
             <p>When creating my style guide I wanted a style minimal enough to let my projects and site content stand out,
                  but also retain some character and uniqueness.</p>
-            <img src="../img/portfolio1/styleguide.png" alt="Site style guide.">
+            <a class="glightbox" href="../img/portfolio1/styleguide.png" ><img src="../img/portfolio1/styleguide.png" alt="Site style guide."></a>
             <p>I then made wireframes. The wireframe below shows the layout I chose for the site, and below 
                 it are two alternative versions of the header I considered.</p>
-            <img src="../img/portfolio1/wireframe3.png" class="img-border" alt="The header I chose for the site.">
+            <a class="glightbox" href="../img/portfolio1/wireframe3.png"><img src="../img/portfolio1/wireframe3.png" class="img-border" alt="The header I chose for the site."></a>
             <div class="two-img-box">
-              <img class="two-img img-border" src="../img/portfolio1/wireframe2.png" alt="Alternative header 1 for the site.">
-              <img class="two-img img-border" src="../img/portfolio1/wireframe1.png" alt="Alternative header 2 for the site.">
+            <a class="two-img img-border glightbox" href="../img/portfolio1/wireframe2.png"><img src="../img/portfolio1/wireframe2.png" alt="Alternative header 1 for the site."></a>
+            <a class="two-img img-border glightbox" href="../img/portfolio1/wireframe1.png"><img src="../img/portfolio1/wireframe1.png" alt="Alternative header 2 for the site."></a>
             </div>
             <p>I then started filling the site with content. I received feedback from my TA that my personal statement 
               and projects lacked direction, so I refined my goals to be more specific to UX/UI and web development 
@@ -101,7 +102,7 @@
                  my title font. It was essential to the branding I had created, but after getting a few people to test 
                  my site I got feedback that suggested it was not easy to read. I changed from House of Cards to Sheepman
                   to keep the style but increase legibility.</p>
-            <img src="../img/portfolio1/Fonts.png" alt="Two font options for the site.">
+            <a class="glightbox" href="../img/portfolio1/Fonts.png"><img src="../img/portfolio1/Fonts.png" alt="Two font options for the site."></a>
         </div>
       </section>
       <section id="reflection">
@@ -331,5 +332,10 @@
     <script  src="../js/script.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
-  </body>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
+</body>
 </html>
