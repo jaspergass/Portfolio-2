@@ -10,7 +10,7 @@
     <link href="../css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
+    <link rel="stylesheet" href="../css/glightbox.min.css">
   </head>
 
   <body>
@@ -81,8 +81,8 @@
               The app allows users to look up definitions of cards and journal their thoughts to document their tarot 
               journeys and promote reflection. The app requires that the user owns their own deck of tarot cards, 
               but otherwise is accessible to both novice and expert tarot readers.</p>
-            <img src="../img/arcana_mini_2/Scene-1x.jpg" srcset="../img/arcana_mini_2/Scene-2x.png 2x" alt="Several screens of the mobile project.">
-            
+            <a class="glightbox" href="../img/arcana_mini_2/Scene-1x.jpg"><img src="../img/arcana_mini_2/Scene-1x.jpg" srcset="../img/arcana_mini_2/Scene-2x.png 2x" alt="Several screens of the mobile project."></a>
+
             <p>Originally, I wanted to use the same design as the previous app prototype and focus on the coding. After 
               recieving some critiques, I realized that I should take the opportunity to improve the design of the app. 
               This was a very long process for me because it was the first time I had ever designed something on my own of 
@@ -92,8 +92,8 @@
                the biggest things I learned through the critiques was that, because journaling can be very personal, it was 
                important for the app to feel safe and trustworthy through its design.</p>
             <div class="two-img-box">
-              <img class="two-img" src="../img/arcana_mini_2/Style1.png" alt="The first iteration of the app's appearance.">
-              <img class="two-img" src="../img/arcana_mini_2/Style2.png" alt="The second iteration of the app's appearance. ">
+              <a class="two-img glightbox" href="../img/arcana_mini_2/Style1.png"><img src="../img/arcana_mini_2/Style1.png" alt="The first iteration of the app's appearance."></a>
+              <a class="two-img glightbox" href="../img/arcana_mini_2/Style2.png"><img src="../img/arcana_mini_2/Style2.png" alt="The second iteration of the app's appearance. "></a>
             </div>
 
             <p>Since I was re-designing the app, I also took the time to consider some new features. Two things I considered were 
@@ -103,15 +103,15 @@
                 encourage reflection and insight. Below are some iterations of these features. In the end, I never fully polished 
                 these features because my team decided it would be outside the scope of the project.</p>
             <div class="two-img-box">
-              <img class="two-img" src="../img/arcana_mini_2/OtherFeatures1.png" alt="An error prompt for deleting an account.">
-              <img class="two-img" src="../img/arcana_mini_2/OtherFeatures2.png" alt="The share feature pop up menu.">
+              <a class="two-img glightbox" href="../img/arcana_mini_2/OtherFeatures1.png"><img src="../img/arcana_mini_2/OtherFeatures1.png" alt="An error prompt for deleting an account."></a>
+              <a class="two-img glightbox" href="../img/arcana_mini_2/OtherFeatures2.png"><img src="../img/arcana_mini_2/OtherFeatures2.png" alt="The share feature pop up menu."></a>
             </div>
 
             <p>An important step to creating the app was understanding the flow and technical requirements. We chose to visualize 
               this using a site map created in FigJam. This clearly shows all the screens that the app would need and how they
                are linked. This also helped inform the structure of the final figma prototype.</p>
-            <img src="../img/arcana_mini_2/Sitemap.png" alt="A site map of the app made in a FigJam file.">
-            <img src="../img/arcana_mini_2/FigmaOverview.png" alt="A screenshot of the figma prototype.">
+            <a class="glightbox" href="../img/arcana_mini_2/Sitemap.png"><img src="../img/arcana_mini_2/Sitemap.png" alt="A site map of the app made in a FigJam file."></a>
+            <a class="glightbox" href="../img/arcana_mini_2/FigmaOverview.png"><img src="../img/arcana_mini_2/FigmaOverview.png" alt="A screenshot of the figma prototype."></a>
         </div>
       </section>
       <section id="challenges">
@@ -124,7 +124,15 @@
              React Native because we wanted to launch the app for both android and IOS systems and because it would be a
               good learning opportunity. However, this ended up being too much for the developers to take on and was a 
               significant barrier to the progress of the app.</p>
-          <p>Another key challenge was communication. I learned early on that there are very few team projects in the computer science program, so the developers had little to no experience doing team work. This meant that most of them had a very hard time communicating and keeping up with the team, and I would have to step up to being the team leader due to my experience and my involvement with the app concept. It also prevented them from understanding the scope of the project. With more team experience, I knew from the beginning how much work was going to be involved with a project of this size and I was willing to sacrifice my time working on it. The other members of the team struggled to calculate how much time was needed and were quickly overwhelmed with the work. I think this could have been avoided by choosing a more simple project, but at the same time I think it was still worth the experience to try and make this project work.</p>
+          <p>Another key challenge was communication. I learned early on that there are very few team projects in the computer
+             science program, so the developers had little to no experience doing team work. This meant that most of them had 
+             a very hard time communicating and keeping up with the team, and I would have to step up to being the team leader 
+             due to my experience and my involvement with the app concept. It also prevented them from understanding the scope 
+             of the project. With more team experience, I knew from the beginning how much work was going to be involved with 
+             a project of this size and I was willing to sacrifice my time working on it. The other members of the team struggled 
+             to calculate how much time was needed and were quickly overwhelmed with the work. I think this could have been 
+             avoided by choosing a more simple project, but at the same time I think it was still worth the experience to try 
+             and make this project work.</p>
         </div>
       </section>
       <section id="reflection">
@@ -148,5 +156,11 @@
     <script  src="../js/script.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
+
   </body>
 </html>
