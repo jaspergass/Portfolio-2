@@ -10,7 +10,7 @@
     <link href="../css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
+    <link rel="stylesheet" href="../css/glightbox.min.css">
   </head>
 
   <body>
@@ -76,17 +76,20 @@
         <div class="section-right">
             <p>We first spent time developing our company by putting together a styleguide. After defining a company identity, we began to structure our digital workspace in GitKraken and Github in order to collaborate and save our work. This was super helpful over the course of the project because we could both work on the project at the same time and combine our edits to the main branch. I found the best method was to update the repository frequently.</p>
             <div class="box-wrap">
-                <img src="../img/responsive_web/web_branding.png" alt="The style guide colours.">
-                <img class="three-img" src="../img/responsive_web/web-headings.png" alt="The style guide fonts and headers.">
-                <img class="three-img" src="../img/responsive_web/buttons.gif" alt="The styling of buttons.">
-                <img class="three-img" src="../img/responsive_web/image-hover.gif" alt="The styling of interactive images.">
+                <a class="glightbox" href="../img/responsive_web/web_branding.png"><img src="../img/responsive_web/web_branding.png" alt="The style guide colours."></a>
+                <a class="three-img glightbox" href="../img/responsive_web/web-headings.png"><img src="../img/responsive_web/web-headings.png" alt="The style guide fonts and headers."></a>
+                <a class="three-img glightbox" href="../img/responsive_web/buttons.gif"><img src="../img/responsive_web/buttons.gif" alt="The styling of buttons."></a>
+                <a class="three-img glightbox" href="../img/responsive_web/image-hover.gif"><img src="../img/responsive_web/image-hover.gif" alt="The styling of interactive images."></a>
             </div>
-            <img src="../img/responsive_web/GitKraken.png" alt="An overview of our GitKraken use.">
 
-            <p>Making the site responsive was a huge focus. We used flexboxes to get the site content to rearrange, and used a few media queries to break the content at specific viewport resolutions.</p>
+            <a class="glightbox" href="../img/responsive_web/GitKraken.png"><img src="../img/responsive_web/GitKraken.png" alt="An overview of our GitKraken use."></a>
+
+            <p>Making the site responsive was a huge focus. We used flexboxes to get the site content to rearrange, 
+              and used a few media queries to break the content at specific viewport resolutions.</p>
+
             <div class="two-img-box">
-                <img class="two-img" src="../img/responsive_web/ezgif-1-1ece9a7372.gif" alt="Responsive demonstration.">
-                <img class="two-img" src="../img/responsive_web/ezgif-1-4c4a71043a.gif" alt="Responsive demonstration.">
+              <a class="two-img glightbox" href="../img/responsive_web/ezgif-1-1ece9a7372.gif"><img src="../img/responsive_web/ezgif-1-1ece9a7372.gif" alt="Responsive demonstration."></a>
+              <a class="two-img glightbox" href="../img/responsive_web/ezgif-1-4c4a71043a.gif"><img src="../img/responsive_web/ezgif-1-4c4a71043a.gif" alt="Responsive demonstration."></a>
             </div>
         </div>
       </section>
@@ -95,7 +98,9 @@
             <h4>Reflection</h4>
         </div>
         <div class="section-right">
-            <p>In the end, we had a fully responsive and functional website. This project was a major learning experience for me because I had little prior knowledge of html and css. By the end, I felt like I was very familiar with html semantic structure and immensely improved my understanding of flexboxes and responsive web design.</p>
+            <p>In the end, we had a fully responsive and functional website. This project was a major learning experience
+               for me because I had little prior knowledge of html and css. By the end, I felt like I was very familiar 
+               with html semantic structure and immensely improved my understanding of flexboxes and responsive web design.</p>
         </div>
       </section>
     </div>
@@ -106,5 +111,11 @@
     <script  src="../js/script.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
+  
   </body>
 </html>
