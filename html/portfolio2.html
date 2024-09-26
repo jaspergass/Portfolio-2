@@ -10,7 +10,7 @@
     <link href="../css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
+    <link rel="stylesheet" href="../css/glightbox.min.css">
   </head>
 
   <body>
@@ -66,8 +66,8 @@
               </p>
             
               <div class="two-img-box">
-                <img class="two-img" src="../img/Portfolio2/Mockup1x1.png" srcset="../img/Portfolio2/Mockup1x2.png 2x, ../img/Portfolio2/Mockup1x3.png 3x" alt="A mock up of the site on a laptop.">
-                <img class="two-img" src="../img/Portfolio2/Mockup2x1.png" srcset="../img/Portfolio2/Mockup2x2.png 2x, ../img/Portfolio2/Mockup2x3.png 3x" alt="A mock up of the site on a phone.">
+                <a class="two-img glightbox" href="../img/Portfolio2/Mockup1x1.png" ><img src="../img/Portfolio2/Mockup1x1.png" srcset="../img/Portfolio2/Mockup1x2.png 2x, ../img/Portfolio2/Mockup1x3.png 3x" alt="A mock up of the site on a laptop."></a>
+                <a class="two-img glightbox" href="../img/Portfolio2/Mockup2x1.png"><img src="../img/Portfolio2/Mockup2x1.png" srcset="../img/Portfolio2/Mockup2x2.png 2x, ../img/Portfolio2/Mockup2x3.png 3x" alt="A mock up of the site on a phone."></a>
               </div>
         </div>
       </section>
@@ -84,7 +84,9 @@
              I wanted something simple, refined, and easy to understand. Thats why I chose this very simple navigation
               system and structure for all my pages. To make my site stand out, the visual complexity of the video and
                the home page text effects balance out the simplicity of the website’s structure.  </p>
-          <img src="../img/Portfolio2/portfolioMockups.png" alt="A screenshot of my figma design iterations.">
+          
+          <a class="glightbox" href="../img/Portfolio2/portfolioMockups.png"><img src="../img/Portfolio2/portfolioMockups.png" alt="A screenshot of my figma design iterations."></a>
+          
           <p>In order to make my cursor have a unique shape and mixed blend mode effect through CSS, it needed to be 
             an actual object on the page instead of the normal cursor. To achieve this, I hid the real cursor and 
             created an object on the page that moves using javascript and applied the blend mode. </p>
@@ -93,19 +95,25 @@
              because the visual style from the camcorder is too rough for the clean and modern style I was aiming for.
               I filmed new footage on my XXXX camera. Below is what the site looked like using the placeholder footage,
                and what it looked like when I was editing the new clips in Adobe Premiere.</p>
-          <div class="two-img-box">
-            <img class="two-img" src="../img/Portfolio2/placeholder_bg.gif" alt="An error prompt for deleting an account.">
-            <img class="two-img" src="../img/Portfolio2/videoEditing.png" alt="The share feature pop up menu.">
+          
+               <div class="two-img-box">
+            <a class="two-img glightbox" href="../img/Portfolio2/placeholder_bg.gif"><img src="../img/Portfolio2/placeholder_bg.gif" alt="An error prompt for deleting an account."></a>
+            <a class="two-img glightbox" href="../img/Portfolio2/videoEditing.png"><img src="../img/Portfolio2/videoEditing.png" alt="The share feature pop up menu."></a>
           </div>
+          
           <p>I also used Git to save my progress. I didn’t run into any issues in development that required reverting
              the project to previous versions, but it was still good practice to make sure that none of my work got lost
               and was easily traceable.</p>
-          <img src="../img/Portfolio2/gitUse.png" alt="A screenshot showing my use of github to save the project.">
+          
+          <a class="glightbox" href="../img/Portfolio2/gitUse.png"><img src="../img/Portfolio2/gitUse.png" alt="A screenshot showing my use of github to save the project."></a>
+          
           <p>One of the biggest updates I have made to the site since creating it was the reorganization of the homepage. 
             Originally, the site had the process documentation on this page. I eventually moved this content to its own
              page and added a project showcase to the home page. This allows people to easily see an overview of my work 
              on the most convenient page. The overview includes the title, date, and some key terms to understand each project at a glance.</p>
-          <img src="../img/Portfolio2/ProjectShowcase.png" alt="A screenshot of a project overview found on the home page of this site.">
+        
+        <a class="glightbox" href="../img/Portfolio2/ProjectShowcase.png"><img src="../img/Portfolio2/ProjectShowcase.png" alt="A screenshot of a project overview found on the home page of this site."></a>
+        
         </div>
       </section>
       <section id="Challenges">
@@ -125,8 +133,8 @@
               improve my coding skills and get the exact behaviour I want.</p>
 
           <div class="two-img-box">
-            <img class="two-img" src="../img/Portfolio2/PortfolioResponsiveness.gif" alt="An error prompt for deleting an account.">
-            <img class="two-img" src="../img/Portfolio2/portfolioGallery.gif" alt="The share feature pop up menu.">
+            <a class="two-img glightbox" href="../img/Portfolio2/PortfolioResponsiveness.gif"><img src="../img/Portfolio2/PortfolioResponsiveness.gif" alt="An error prompt for deleting an account."></a>
+            <a class="two-img glightbox" href="../img/Portfolio2/portfolioGallery.gif"><img src="../img/Portfolio2/portfolioGallery.gif" alt="The share feature pop up menu."></a>
           </div>
         </div>
       </section>
@@ -153,5 +161,10 @@
     <script  src="../js/script.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
   </body>
 </html>
