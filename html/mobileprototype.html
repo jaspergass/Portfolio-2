@@ -10,7 +10,7 @@
     <link href="../css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
+    <link rel="stylesheet" href="../css/glightbox.min.css">
   </head>
 
   <body>
@@ -82,8 +82,8 @@
                 create sketches and personas. Our style guide includes very warm colors to create a 
                 friendly atmosphere, and our fonts are classy but simple and easy to read.
             </p>
-            <img src="../img/mobile_prototype/mobile-sketches.png" alt="Sketches of a mobile prototype.">
-            <img src="../img/mobile_prototype/styleguide.png" alt="The style guide colour pallet and fonts.">
+            <a class="glightbox" href="../img/mobile_prototype/mobile-sketches.png"><img src="../img/mobile_prototype/mobile-sketches.png" alt="Sketches of a mobile prototype."></a>
+            <a class="glightbox" href="../img/mobile_prototype/styleguide.png"><img src="../img/mobile_prototype/styleguide.png" alt="The style guide colour pallet and fonts."></a>
 
             <p>
                 We created several initial wireframes to explore different layout options. 
@@ -96,10 +96,10 @@
                 the 4th image, we opted for a text area to make inputting ingredients as easy as possible.
             </p>
             <div class="box-row">
-                <img class="four-img" src="../img/mobile_prototype/manual1.png" alt="An initial wireframe.">
-                <img class="four-img" src="../img/mobile_prototype/manual2.png" alt="An initial wireframe.">
-                <img class="four-img" src="../img/mobile_prototype/manual3.png" alt="The first prototype.">
-                <img class="four-img" src="../img/mobile_prototype/manual4.png" alt="The final design.">
+              <a class="four-img glightbox" href="../img/mobile_prototype/manual1.png"><img src="../img/mobile_prototype/manual1.png" alt="An initial wireframe."></a>
+              <a class="four-img glightbox" href="../img/mobile_prototype/manual2.png" ><img src="../img/mobile_prototype/manual2.png" alt="An initial wireframe."></a>
+              <a class="four-img glightbox" href="../img/mobile_prototype/manual3.png"><img src="../img/mobile_prototype/manual3.png" alt="The first prototype."></a>
+              <a class="four-img glightbox" href="../img/mobile_prototype/manual4.png"><img src="../img/mobile_prototype/manual4.png" alt="The final design."></a>
             </div>
             <p>
                 We then conducted user tests. We tested nine people in total, ages 20-61, 
@@ -115,8 +115,8 @@
                 The share function aids our main goal of passing down recipes.
             </p>
             <div class="two-img-box">
-                <img class="two-img" src="../img/mobile_prototype/errorPrompt.png" alt="An error prompt for deleting an account.">
-                <img class="two-img" src="../img/mobile_prototype/share.png" alt="The share feature pop up menu.">
+              <a class="two-img glightbox" href="../img/mobile_prototype/errorPrompt.png"><img src="../img/mobile_prototype/errorPrompt.png" alt="An error prompt for deleting an account."></a>
+              <a class="two-img glightbox" href="../img/mobile_prototype/share.png"><img src="../img/mobile_prototype/share.png" alt="The share feature pop up menu."></a>
             </div>
         </div>
       </section>
@@ -139,9 +139,12 @@
     
    
     <!-- script -->
-    
     <script  src="../js/script.js"></script>
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
   </body>
 </html>
