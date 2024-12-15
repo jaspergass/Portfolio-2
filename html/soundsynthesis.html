@@ -10,7 +10,7 @@
     <link href="../css/flexbox.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
-    
+    <link rel="stylesheet" href="../css/glightbox.min.css">
   </head>
 
   <body>
@@ -63,7 +63,13 @@
             <h4>Introduction</h4>
         </div>
         <div class="section-right">
-          <p>intro</p>
+          <p>This was a project that I completed on my own for a sound design class over the course of several weeks. 
+            The goal was to create a patch in Max that explores class concepts in a unique way. I created an AM and FM 
+            synthesis instrument that doubles as a way to teach the concepts by using a spectrograph to show how your 
+            interaction with the instrument changes the sound waves you create.</p>
+          
+          <p>The following video demonstrates the functionality of my final project:</p>
+          <div style="padding:0 0 0 0;position:relative;height:auto;width:100%;"><iframe src="https://player.vimeo.com/video/935109406?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:relative;width:100%;height:40em;" title="Jasper Gass IAT340 Final Project Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         </div>
       </section>
       <section id="process">
@@ -71,9 +77,36 @@
             <h4>Process</h4>
         </div>
         <div class="section-right">
-            
-          <div style="padding:0 0 0 0;position:relative;height:auto;width:100%;"><iframe src="https://player.vimeo.com/video/935109406?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:relative;width:100%;height:40em;" title="Jasper Gass IAT340 Final Project Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-           
+          <p>Because sound synthesis and working in Max was very new to me, I started this project by doing research. A video
+             that I found that really inspired me was a tutorial for AM and FM synthesis. Following this tutorial, I knew I 
+             wanted to explore this concept further in my own project. To see the original tutorial, click <a href="https://www.youtube.com/watch?v=ZcNibgAwoDc" target="_blank">here →.</a></p>
+
+          <p>While this tutorial helped me understand AM/FM synthesis a lot, I felt like I still had questions. I am a very 
+            visual learner, so it seemed natural to me to find a way to explore this kind of synthesis while watching a 
+            spectrograph to see how all of the different wave forms were changing and influencing each other.</p>
+
+          <p>I also wanted to involve interaction in my patch. I wanted an interaction that was more intuitive and engaging 
+            than pressing keys on a keyboard. For this reason I focused on mouse interaction.</p>
+
+          <p>With these two ideas combined, I created an interactive spectrograph where the X and Y axes allow you to modify 
+            the two frequencies being combined in your AM or FM synthesis. The first draft of my project was very simple. 
+            Below is a screenshot of most of my code in Max that captures the mouse input and has the option for AM and 
+            FM synthesis.</p>
+
+          <a class="glightbox" href="../img/MaxPatchImg/MaxProposal.png"><img src="../img/MaxPatchImg/MaxProposal.png"></a>
+
+          <p>My final patch had a lot more functionality. The user can pick between AM, FM, and a more experimental and 
+            wild version of FM to explore more sounds.</p>
+
+             <a class="glightbox" href="../img/MaxPatchImg/FinalPatch.png"><img src="../img/MaxPatchImg/FinalPatch.png"></a>
+          <p>I also allowed people to pause the spectrograph to give them more 
+            control. Users can also press keys 1-8 to save a specific sound that they liked. I also added a mini digital 
+            keyboard (the kslider element) to allow users to select the pitch of their modulating
+             frequency when in FM mode. This also helped give users more control over their sound exploration.</p> 
+             <div class="two-img-box">
+              <a class="two-img glightbox" href="../img/MaxPatchImg/PauseControl.png"><img src="../img/MaxPatchImg/PauseControl.png" alt="The front side of the ACM pamphlet."></a>
+              <a class="two-img glightbox" href="../img/MaxPatchImg/Kslider.png"><img src="../img/MaxPatchImg/Kslider.png" alt="The back side of the ACM pamphlet."></a>
+            </div>
         </div>
       </section>
       <section id="challenges">
@@ -81,7 +114,10 @@
           <h4>Challenges</h4>
         </div>
         <div class="section-right">
-          <p>challenges</p>
+          <p>One challenge I faced in this project was balancing simplicity and complexity. I was worried about my patch
+             not being complex enough, but I also didn’t want to add unnecessary features that felt like they didn’t belong. 
+             In the end I think I found a good balance of features that added complexity without compromising the core idea
+              behind the project.</p>
         </div>
       </section>
       <section id="reflection">
@@ -89,7 +125,11 @@
             <h4>Reflection</h4>
         </div>
         <div class="section-right">
-          <p>reflection</p>
+          <p>Overall, I am very proud of what I created in this class. Exploring sound has been a very tempting but also
+             very daunting thing for me, so I am glad to have had the opportunity to learn Max and feel more confident 
+             in my ability to work with sound. I would love to continue working withs sound in the future, and I really 
+             want to explore other visual coding programs as I found the process of working with Max to be very intuitive
+              and rewarding.</p>
         </div>
       </section>
     </div>
@@ -100,5 +140,10 @@
     <script  src="../js/script.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
   </body>
 </html>
