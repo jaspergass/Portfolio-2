@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Jasper Gass - TomatoScout</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    
+    <header>
+      
+    </header>
+    <nav>
+      <div class="nav-left">
+        <a class="no-underline" href="../index.html"><h1>JG</h1></a>
+        <a href="../index.html"><img src="../img/cursor-hover.svg"></a>
+      </div>
+      <div class="nav-right">
+        <div class="expanded">
+          <ul>
+            <li><a class="no-underline" href="../index.html">Home</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/file/d/1Q3tl_DPJMUp9IAVywr466hvqr_uDoaDz/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+          </ul>
+        </div>
+
+        <div class="condensed">
+          <button id="menu-button" onclick="showMenu()">Menu</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <div class="body-box">
+      <div id="menu-content" class="menu-content">
+        <ul>
+          <li><a class="no-underline" href="../index.html">Home</a></li>
+          <li><a class="no-underline" href="https://drive.google.com/file/d/1Q3tl_DPJMUp9IAVywr466hvqr_uDoaDz/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+        </ul>
+      </div>
+       
+      <section class="top-section">
+        <img class="img-border" src="../img/DSBIA_img/DSBIAheader_1x.png" srcset="../img/DSBIA_img/DSBIAheader_2x.png 2x, ../img/DSBIA_img/DSBIAheader_3x.png 3x" alt="A header that shows the title of the page and a mosaic of some of the designs I made.">
+        <div class="project-title">
+          <h2>TomatoScout</h2>
+          <h4>Fall 2024</h4>
+        </div> 
+      </section>
+
+      <section id="intro">
+        <div class="section-left">
+            <h4>Introduction</h4>
+        </div>
+        <div class="section-right">
+          <p>This was a two person project that was completed over the course of 3 weeks. Together, my teammate and I fine 
+            tuned YOLOv8 to create a CV model that can detect and classify tomatoes as healthy and unhealthy. We added 
+            some of our own images to learn how to label and process image data. We also wrote a full report about the 
+            project which can be accessed <a target=”_blank” rel="noopener noreferrer" href="https://drive.google.com/file/d/1DmKguv4FR_cruWpieFum50gtvTktj9OO/view">here→</a>. 
+          </p>
+
+        </div>
+      </section>
+      
+      <section id="what">
+        <div class="section-left">
+            <h4>What is TomatoScout?</h4>
+        </div>
+        <div class="section-right">
+
+          <p>TomatoScout is an AI assistant that detects healthy and unhealthy tomatoes for large-scale applications 
+            such as restaurants, grocery stores. This is a supervised detection problem trained on labelled tomato 
+            images. On a smaller scale, identifying these differences could be done one at a time and wouldn't benefit 
+            from an AI assistant. However, for large quantities purchased by businesses, an AI model would be very 
+            useful to make sure that their produce is fresh before it is used for a dish or put out to be sold. This 
+            would be faster and potentially more accurate than human sorting with a properly trained model.</p>
+         
+        </div>
+      </section>
+
+      <section id="Dataset">
+        <div class="section-left">
+          <h4>Dataset</h4>
+        </div>
+        <div class="section-right">
+          
+          <p>We started with <a target=”_blank” rel="noopener noreferrer" href="https://universe.roboflow.com/project-yolo/tomato-nixik ">this dataset→</a> found on a website called roboflow. The tomato categories are: healthy 
+            (612 samples) and three types of unhealthy tomatoes: early blight (173 samples), late blight (233 samples), 
+            and bacterial spot (272 samples). For our purpose, we just need to distinguish between healthy and unhealthy 
+            and not the different kinds of unhealthy tomatoes, but it could still be beneficial for the model to be able
+             to identify different problems as it may help farmers and stores identify potential outbreaks in their supply. </p>
+          
+          <p>Each team member also took 30 new photos and annotated them using makesense.ai. We both chose to take our own 
+            pictures to have more control over what kinds of images we were adding. We wanted to get pictures of sliced
+             tomatoes, tomatoes with various backgrounds, different coloured tomatoes, and tomatoes next to similar produce
+             like apples and persimmons to get a wider variety of samples. </p>
+
+        </div>
+      </section>
+
+      <section id="bias-and-privacy">
+        <div class="section-left">
+          <h4>Bias & privacy issues</h4>
+        </div>
+        <div class="section-right">
+          <p>Because we have nearly three times as many images of healthy tomatoes in comparison to the other categories, 
+            the model will be more biased toward them. This is notable, as we did find that healthy tomatoes held the 
+            highest confidence when analyzing the results of our trained models. Most of these healthy tomatoes are also
+             red, which could cause a bias with the colour of the tomatoes. To solve this, we could have found more 
+             images of tomatoes from the other three categories, or removed some of the healthy tomato images to have 
+             a dataset with more equal distribution for all labels.</p>
+
+          <p>When discussing privacy, we do not see any glaring ethical issues with detecting different kinds
+            of tomatoes. One potential issue could be malicious intent when detecting the unhealthy
+            tomatoes as some may use that to intentionally target specific farms or distributors.
+            </p>
+
+        </div>
+      </section>
+
+      <section id="evaluation">
+        <div class="section-left">
+          <h4>Model Evaluation</h4>
+        </div>
+        <div class="section-right">
+          <p>We discussed the differences between 3 models. Model 1 was our baseline for comparison. It used default 
+            values and was trained using only the images from the original dataset, excluding the images we took. 
+            Its performance, as expected, was average. Model 2 added in our images. We wanted to isolate how the 
+            addition of these images affected our baseline model. The addition of our data as a test set negatively 
+            affected the model’s accuracy, as reflected in the confusion matrix below. It seemed to be more confused 
+            about the differences between early and late blight, and had more difficulty distinguishing the background
+             from early blight tomatoes particularly. In Model 3, we increased the batch size to 20. The batch size is 
+             how many examples the model goes through with each iteration of training. Increasing the batch size to 20 
+             produced the most evenly distributed model we could get.
+          </p>
+
+          <div class="two-img-box">
+            <a class="two-img glightbox" href="../img/TomatoScout/Model2ConfusionMatrix.png"><img src="../img/TomatoScout/Model2ConfusionMatrix.png" alt="David Pel survey results for most important company attributes."></a>
+            <a class="two-img glightbox" href="../img/TomatoScout/Model3ConfusionMatrix.png"><img src="../img/TomatoScout/Model3ConfusionMatrix.png" alt="David Pel survey results for most liked colour combination."></a>
+          </div>
+
+          <p>To better compare Model 2 and 3, we looked at a few metrics. The recall-confidence curve shows how the 
+            recall metric, aka the true positive rate, changes as the confidence threshold varies. Below, you can see
+             how recall remains higher and more stable for longer in Model 3 than Model 2.</p>
+
+          <div class="two-img-box">
+            <a class="two-img glightbox" href="../img/TomatoScout/Model2Recall.png"><img src="../img/TomatoScout/Model2Recall.png" alt="David Pel survey results for most important company attributes."></a>
+            <a class="two-img glightbox" href="../img/TomatoScout/Model3Recall.png"><img src="../img/TomatoScout/Model3Recall.png" alt="David Pel survey results for most liked colour combination."></a>
+          </div>
+
+         <p>The F1 confidence curves shown below also demonstrate how Model 3 had a more stable
+          F1 score as confidence increased.</p>
+
+          <div class="two-img-box">
+            <a class="two-img glightbox" href="../img/TomatoScout/Model2F1.png"><img src="../img/TomatoScout/Model2F1.png" alt="David Pel survey results for most important company attributes."></a>
+            <a class="two-img glightbox" href="../img/TomatoScout/Model3F1.png"><img src="../img/TomatoScout/Model3F1.png" alt="David Pel survey results for most liked colour combination."></a>
+          </div>
+
+          <p>Below is a demonstration of how Model 3 would label some images.</p>
+
+          <div class="two-img-box">
+            <a class="two-img glightbox" href="../img/TomatoScout/Model3ExamplesTrue.jpg"><img src="../img/TomatoScout/Model3ExamplesTrue.jpg" alt="David Pel survey results for most important company attributes."></a>
+            <a class="two-img glightbox" href="../img/TomatoScout/Model3ExamplesReal.jpg"><img src="../img/TomatoScout/Model3ExamplesReal.jpg" alt="David Pel survey results for most liked colour combination."></a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="reflection">
+        <div class="section-left">
+            <h4>Reflection</h4>
+        </div>
+        <div class="section-right">
+          <p>In the end we were able to successfully train an AI to detect healthy and unhealthy tomatoes. In 
+            future iterations of this project we would love to add more food varieties to teach the system how to 
+            differentiate between tomatoes and non-tomatoes. We would also definitely use a more simplified label 
+            system with just “healthy” and “unhealthy” categories. The inclusion of different types of tomato diseases
+             and at different stages was overcomplicated for our use case and had a negative impact on the model’s 
+             performance. The differences were so nuanced that our human eyes couldn’t tell, so it’s no surprise that 
+             the model struggled with it as well.</p>
+        </div>
+      </section>
+    </div>
+    
+   
+    <!-- script -->
+    
+    <script  src="../js/script.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
+
+  </body>
+</html>
