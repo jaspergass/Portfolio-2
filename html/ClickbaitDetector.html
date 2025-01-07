@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Jasper Gass - Clickbait Detector</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    
+    <header>
+      
+    </header>
+    <nav>
+      <div class="nav-left">
+        <a class="no-underline" href="../index.html"><h1>JG</h1></a>
+        <a href="../index.html"><img src="../img/cursor-hover.svg"></a>
+      </div>
+      <div class="nav-right">
+        <div class="expanded">
+          <ul>
+            <li><a class="no-underline" href="../index.html">Home</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/file/d/1Q3tl_DPJMUp9IAVywr466hvqr_uDoaDz/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+          </ul>
+        </div>
+
+        <div class="condensed">
+          <button id="menu-button" onclick="showMenu()">Menu</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <div class="body-box">
+      <div id="menu-content" class="menu-content">
+        <ul>
+          <li><a class="no-underline" href="../index.html">Home</a></li>
+          <li><a class="no-underline" href="https://drive.google.com/file/d/1Q3tl_DPJMUp9IAVywr466hvqr_uDoaDz/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+        </ul>
+      </div>
+       
+      <section class="top-section">
+        <div class="project-title">
+          <h2>Clickbait Detector</h2>
+          <h4>Fall 2024</h4>
+        </div> 
+      </section>
+
+      <section id="intro">
+        <div class="section-left">
+            <h4>Introduction</h4>
+        </div>
+        <div class="section-right">
+          <p>This was a two person project completed over the course of 3 weeks. Our clickbait detector is a Natural 
+            Language Processing (NLP) AI model that uses sentiment analysis methods to identify news articles with 
+            clickbait titles. This is done through a classification task, as the model labels the titles as clickbait 
+            or not clickbait. Clickbait is a term used to describe content which is designed in a way to motivate 
+            users to interact with it, often using eye-catching imagery or enticing and gossip-like headlines.
+             Clickbait is an issue for several reasons. These articles tend to spread misinformation and mislead 
+             users into viewing them. Having an AI model that could identify clickbait would allow users to avoid clickbait
+              content, thus saving them time and energy spent otherwise accidentally engaging with clickbait material, 
+              and also promote media literacy. We envision this model being used as a browser extension that could scan
+               web pages and flag clickbait articles. This would be particularly useful on search engines like Google 
+               or websites like YouTube which have large quantities of content and complex algorithms, making it difficult
+                for users to sift through. A full report on the project can be found <a target=”_blank” rel="noopener noreferrer" href="https://drive.google.com/file/d/1I7YFRkapZpf06EroHmlU0Y7z-iyqvwfE/view">here→</a>. 
+          </p>
+
+        </div>
+      </section>
+
+      <section id="Dataset">
+        <div class="section-left">
+          <h4>Dataset</h4>
+        </div>
+        <div class="section-right">
+          
+          <p>The <a target=”_blank” rel="noopener noreferrer" href="https://huggingface.co/datasets/christinacdl/clickbait_detection_dataset">dataset we used→</a> was formed by merging several smaller datasets. It includes 37,870 titles in total, 
+            with 17,850 NOT clickbait texts and 20,020 CLICKBAIT texts. This dataset was ideal for this project because
+             of its very large size, and it has been preprocessed by removing duplicate values. In order to make this
+              dataset more balanced, we decided to remove 2170 CLICKBAIT items. This gives us a perfectly balanced amount
+               of 17,850 items for each category (35,700 total).</p>
+          
+          <p>Using a Pandas data frame and the Matplotlib library, we created graphs in Colab to
+            show how our data was reduced. This results in no bias between clickbait and not-clickbait
+            articles when training our model.</p>
+
+            <div class="two-img-box">
+              <a class="two-img glightbox" href="../img/ClickbaitDetectorImgs/ClickbaitDataDistributionBefore.png"><img src="../img/ClickbaitDetectorImgs/ClickbaitDataDistributionBefore.png" alt="The distribution of data before removing samples."></a>
+              <a class="two-img glightbox" href="../img/ClickbaitDetectorImgs/ClickbaitDataDistributionAfter.png"><img src="../img/ClickbaitDetectorImgs/ClickbaitDataDistributionAfter.png" alt="The equal distribution after removing samples"></a>
+            </div>
+
+          <p>Below are a few examples of clickbait and not clickbait articles from the dataset.</p>
+          <img src="../img/ClickbaitDetectorImgs/ClickbaitDataExamples.png" alt="Clickbait and not clickbait article titles.">
+
+        </div>
+      </section>
+
+      <section id="bias-and-privacy">
+        <div class="section-left">
+          <h4>Bias & privacy issues</h4>
+        </div>
+        <div class="section-right">
+          <p>There are some potential biases and privacy concerns with this data. Identifying what is clickbait and 
+            what is not is a subjective process, so inconsistency with how the data was labelled (especially since 
+            it came from combining multiple other datasets) may create bias. Clickbait titles also often have a certain 
+            structure or common language that they use, which could cause certain words to become biased even if used in 
+            a non-clickbait context. Considering that titles of articles must be publicly available in the first place 
+            to be assessed, we do not believe that using the article titles will create a privacy issue. However, article 
+            titles might be able to be traced back to the writer or publisher of the article, which could create some 
+            ethical issues when we are associating them with clickbait. As clickbait is a negative thing, being associated 
+            with it could have a negative effect on the authors. The concern around this is amplified by the risk of
+             mislabeling articles, as the model would be making false accusations.</p>
+
+        </div>
+      </section>
+
+      <section id="evaluation">
+        <div class="section-left">
+          <h4>Model Evaluation</h4>
+        </div>
+        <div class="section-right">
+          <p>Our final model had 96.8% accuracy. While this is a pretty good score for the little training we did, 
+            a ~4% error rate is not good enough for this to be a real product. In the context of clickbait article titles, 
+            it is important to be as accurate as possible since we do not want to falsely accuse journalists of creating.</p>
+
+          
+
+          <p>As the F1 score provides a mean between the precision and recall metrics, we can use it
+            to see the impacts which false negatives and false positives have on our model’s performance.
+            With an F1 score 96.7%, there is again a ~4% chance of a false positive or false negative. Looking at 
+            how this would impact the model in use, we believe that there would be more problems with false positives 
+            than false negatives. By inaccurately classifying an article as clickbait (false positive), we would be 
+            leading users away from the information they are seeking. On the other hand, false negatives would simply 
+            require a user’s own personal judgement upon reading the introduction of an article to see whether or not 
+            they are still interested in its contents.
+            </p>
+
+        </div>
+      </section>
+
+      <section id="reflection">
+        <div class="section-left">
+            <h4>Reflection</h4>
+        </div>
+        <div class="section-right">
+          <p>After training and fine-tuning our BERT model for a clickbait classification task, we
+            believe that releasing it as a real product at this stage would be unethical because of this
+            subjectivity. This begs the question: is it possible to classify clickbait with complete certainty in
+            an ethical way? We believe it would not be possible. The process of identifying clickbait will
+            always be subjective, so any line we draw will be arbitrary. However, just because the difference is vague 
+            doesn’t mean that the distinction is impossible. We clearly know clickbait and not clickbait articles when 
+            we see them. In this sense, we imagine our clickbait detector would work best if it had some kind of 
+            threshold where it requires a very high level of certainty in order to flag something as clickbait. This would
+             hopefully prevent incorrectly labelling non-clickbait as clickbait. As previously stated, having false 
+             negatives would be less catastrophic as users will simply need to use their own judgements on misinformation.
+              We want to avoid this because it might falsely label a writer’s work as clickbait, affecting their 
+              reputation, and because it might deter the user from engaging with content that they might have wanted to
+               actually see.
+            </p>
+        </div>
+      </section>
+    </div>
+    
+   
+    <!-- script -->
+    
+    <script  src="../js/script.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
+
+  </body>
+</html>
