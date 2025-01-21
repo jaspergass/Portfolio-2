@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Jasper Gass - Data Visualization</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zud4esk.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    
+    <header>
+      
+    </header>
+    <nav>
+      <div class="nav-left">
+        <a class="no-underline" href="../index.html"><h1>JG</h1></a>
+        <a href="../index.html"><img src="../img/cursor-hover.svg"></a>
+      </div>
+      <div class="nav-right">
+        <div class="expanded">
+          <ul>
+            <li><a class="no-underline" href="../index.html">Home</a></li>
+            <li><a class="no-underline" href="https://drive.google.com/file/d/1MwRdmBRei2ALia3Za8JJOAxMeU9q_EWh/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+          </ul>
+        </div>
+
+        <div class="condensed">
+          <button id="menu-button" onclick="showMenu()">Menu</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <div class="body-box">
+      <div id="menu-content" class="menu-content">
+        <ul>
+          <li><a class="no-underline" href="../index.html">Home</a></li>
+          <li><a class="no-underline" href="https://drive.google.com/file/d/1MwRdmBRei2ALia3Za8JJOAxMeU9q_EWh/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a class="no-underline" href="../html/archive.html">Archive</a></li>
+        </ul>
+      </div>
+       
+      <section class="top-section">
+        <img src="../img/MaxPatchImg/MaxPatchBanner.jpg" alt="A banner with the project title.">
+        <div class="project-title">
+          <h2>Data Visualization</h2>
+          <h4>Spring 2024</h4>
+        </div> 
+      </section>
+
+      <section id="intro">
+        <div class="section-left">
+            <h4>Introduction</h4>
+        </div>
+        <div class="section-right">
+          <p>This was a two person project completed over the course of about 5 weeks. Together, we created a series 
+            of data visualizations to explore effects of social media on mental health. We created these visuals using 
+            Vega-Lite in Observable. A full report can be found <a href="https://observablehq.com/@jasper2-ws/iat355_final_jaspergass_joshuachin" target="_blank">here →.</a> 
+            In this report you will find detailed information on the process of making the visuals, our findings, 
+            and be able to interact with the visuals in real time.
+          </p>
+          
+          <p>The following video summarizes the project and demonstrates the interactivity:</p>
+          <div style="padding:0 0 0 0;position:relative;height:auto;width:100%;"><iframe src="https://player.vimeo.com/video/934385677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:relative;width:100%;height:40em" title="IAT355 Final Project Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+      </section>
+      <section id="process">
+        <div class="section-left">
+            <h4>Process</h4>
+        </div>
+        <div class="section-right">
+          <p>We started by defining 6 questions that would guide our exploration and serve as jumping points for creating 
+            our visualizations. For example: What is the relationship between the number of hours using social media and 
+            poor mental health tendencies? After defining these questions, we set out on sketching potential visualizations.
+             We did this mostly on paper, but I also tried using Tableau to quickly generate visualizations to see how 
+             effective they were.</p>
+
+          <p>We wanted to keep our visuals as simple as possible. Data can often seem overwhelming, 
+            so we wanted to make the experience intuitive. One way we achieved this was through interactivity.</p>
+
+          <p>We grouped visuals of similar kinds together with a toggle to switch between variables. The heat maps below are 
+            one example. They show the relationship between respondent’s daily social media usage and their tendency to get 
+            distracted by social media, sleeping issues, and ability to concentrate. The interactivity here allows us to 
+            condense 3 visuals into one, effectively saving space while still allowing the user to see the relationships 
+            between the visuals and analyze the trends.</p>
+            
+            <iframe width="100%" height="573" frameborder="0"
+            src="https://observablehq.com/embed/@jasper2-ws/iat355_final_jaspergass_joshuachin@1444?cells=viewof+heatmapRadio%2CHoursOnSocialMediaHeatMap"></iframe>
+
+          <p>Another visual that had interactive elements was this histogram showing the distribution of ages of survey 
+            respondents for the first survey. A toggle was used again to filter between either respondents’ gender or 
+            occupation. The majority of respondents were between the ages of 18 and 27, but there were a few odd entries
+             up to age 91. Instead of getting rid of these outliers completely, we give the user the ability to filter 
+             them out using this slider if they want to. Reducing the range of ages shown also makes it easier to compare
+              to the age and gender histogram for the other survey. </p>
+
+              <iframe width="100%" height="520" frameborder="0"
+              src="https://observablehq.com/embed/@jasper2-ws/iat355_final_jaspergass_joshuachin?cells=Survey1AgeGenderDistribution%2Cviewof+ageRange%2Cviewof+barSize"></iframe>
+              <a class="glightbox" href="../img/DataVisualization/Survey2AgeGender.png"><img src="../img/DataVisualization/Survey2AgeGender.png" alt="."></a>
+
+          <p>One final way we implemented interactivity was through “brushing.” The scatterplot below shows respondent's
+             tendency to compare themselves to others through social media (self esteem). After selecting a range of 
+             responses on the left scatter plot the user can see their corresponding ages in the visual on the right. 
+             This helps separate the data amongst different ages to identify whether one age range suffers more significantly 
+             than the other. A scatterplot, like a heat map, allows us to see the relationship between two dimensions. 
+             The use of colour here acts the same as a heat map as well, telling us how many cases are stacked on top of
+              one another. We preferred a scatterplot in this case though because the age data is much more widespread. 
+              This visual helped us notice that the majority of people who ranked 4 or 5 on the self esteem scale were 
+              in their early twenties, which could make sense considering that the environmental factors of these university
+               students may be impacting their social media usage and self esteem.</p>
+
+               <iframe width="100%" height="663" frameborder="0"
+               src="https://observablehq.com/embed/@jasper2-ws/iat355_final_jaspergass_joshuachin@1447?cells=SelfEsteemAndAgeScatter"></iframe>
+
+          <p>One of the most shocking things we found in our exploration of the data was the dramatic difference in effects
+             of social media on each gender. In the visuals below, you can see that women tend to be more at risk for 
+             lower self esteem and addictive social media tendencies than men.</p> 
+             <a class="glightbox" href="../img/DataVisualization/SelfEsteemByGender.png"><img src="../img/DataVisualization/SelfEsteemByGender.png" alt="."></a>
+             <a class="glightbox" href="../img/DataVisualization/AddictionByGender.png"><img src="../img/DataVisualization/AddictionByGender.png" alt="."></a>
+        </div>
+      </section>
+      <section id="reflection">
+        <div class="section-left">
+            <h4>Reflection</h4>
+        </div>
+        <div class="section-right">
+          <p>During my co-op with Fraser Health Authority I learned a lot about designing good data visuals, but I didn’t
+            learn how to actually work with data and create the visuals using code. Being able to implement the knowledge 
+            I gained during my work semester to create my own designs from start to finish in this project was very 
+            satisfying. I also really appreciated learning the technical rules around designing data formally to 
+            solidify my knowledge. I definitely have a newfound appreciation for data as a whole after learning its
+             complexities. There are so many ways to display the same information, but it takes a lot of thought and 
+             care to pick the right way for specific use cases. I am positive that the skills I have developed for 
+             designing data will prove useful for a long time.</p>
+        </div>
+      </section>
+    </div>
+    
+   
+    <!-- script -->
+    
+    <script  src="../js/script.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/script.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop:true });
+    </script>
+  </body>
+</html>
